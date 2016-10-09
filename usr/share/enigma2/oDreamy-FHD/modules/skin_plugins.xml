@@ -590,18 +590,18 @@
 	<!-- ********** Cron Manager ********** P012 FHD -->
  
 	<!--  Cron Manager Config FHD --> 
- 	<screen name="CronTimersConfig" title="Cronmanager Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+ 	<screen name="SetupCronConf" title="Cronmanager Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template"/>
 		<panel name="p800_DateMid"/>
 		<panel name="p800_Logo"/>
 		<panel name="nRGYB"/>
-		<widget name="menu" position="70,180" size="820,500" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		<widget name="config" position="70,180" size="820,500" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/cron.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="P012" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
  	</screen>
 
 	<!--  Cron Manager Menu FHD --> 
- 	<screen name="CronTimers" title="Cronmanager Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+ 	<screen name="CronManager" title="Cronmanager Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template"/>
 		<panel name="p800_DateMid"/>
 		<panel name="p800_Logo"/>

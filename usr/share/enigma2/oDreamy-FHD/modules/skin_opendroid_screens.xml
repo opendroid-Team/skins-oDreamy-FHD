@@ -34,8 +34,8 @@
 		<panel name="nRGYB"/>
 		<ePixmap pixmap="oDreamy-FHD/menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="70,150" zPosition="3" size="120,157" pixmap="oDreamy-FHD/icons/emupic.png" alphatest="blend" transparent="1" />
-		<widget name="choose_cam"  position="180,180" size="710,40" font="Regular;30" halign="center" valign="center" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1"/>
-		<widget name="config"      position="180,250" size="710,40" font="Regular;30" itemHeight="40" transparent="1" zPosition="2" />
+		<widget name="config"    position="180,260" size="710,50" font="Regular;32" itemHeight="40" halign="left" valign="center" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1"/>
+		<widget name="actifcam"  position="180,210" size="710,40" font="Regular;32" halign="right" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3"  />
  		
 		<eLabel position="180,305" size="710,1" backgroundColor="#10404040" zPosition="2"/>
 		<!-- is crypted ? -->
@@ -143,6 +143,32 @@
         </widget>
 		<!-- eLabel name="DEBUG" text="PE002" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
+	
+	<!-- SoftCam Panel Install --> 
+	<screen name="ShowSoftcamPackages" position="fill" title="Install Softcams" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="sRG"/> 
+		<widget source="list" render="Listbox" position="70,180" size="840,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryText(pos = (90, 5), size = (720, 40), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (90, 40), size = (720, 40), font=1, flags = RT_HALIGN_LEFT, text = 2, color=0x91c7ff, color_sel=0x04307e), # index 2 is the description
+						MultiContentEntryPixmapAlphaBlend(pos = (5, 58), size = (0, 0), png = 5), # index 4 is the div pixmap
+					],
+				"fonts": [gFont("Regular",32),gFont("Regular",28)],
+				"itemHeight": 80
+				}
+			</convert>
+		</widget>
+		<eLabel text="OK ="    position="1390,965"  size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<widget source="key_ok" render="Label" position="1360,1000" size="200,40" font="Regular; 30" foregroundColor="ltbluette" halign="left" backgroundColor="header" valign="center" transparent="1"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<!-- eLabel name="DEBUG" text="PE002" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
 
 	<!--   SoftCam CCCam Info FHD -->
 	<screen name="CCcamInfoMain" position="fill" title="Softcam Info" backgroundColor="transparent" flags="wfNoBorder">
@@ -182,15 +208,15 @@
 	</screen>	
 
 	<!--   Internet Addons FHD -->
-	<screen name="OPDInternetAddons" position="fill" title="Internet Addons" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="Connection_Server" position="fill" title="OPD Addons" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
-		<panel name="nRG"/>
-		<ePixmap pixmap="oDreamy-FHD/menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
-		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
+		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="oDreamy-FHD/menu/plugin_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		 
 		<ePixmap position="895,180" size="15,720" pixmap="oDreamy-FHD/box/maxbargh.png" alphatest="blend" transparent="1" zPosition="4" />
-		<widget name="menu" position="70,250" size="840,560" font="Regular;30" itemHeight="72" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<widget name="list" position="70,180" size="840,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<!-- eLabel name="DEBUG" text="PE006" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -373,12 +399,12 @@
 	</screen>
 
 	<!--  Remove Addons FHD -->
-	<screen name="AddonRemove" position="fill" title="Remove Addons" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="AddonsRemove" position="fill" title="Remove Addons" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nR"/>
-		<widget name="status" position="70,180" size="820,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
+		<widget name="list" position="70,180" size="820,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
 		<eLabel position="70,240" size="820,1" backgroundColor="#10303030" zPosition="2"/>
 		<widget name="remove" position="70,270" size="820,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="oDreamy-FHD/menu/utility.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
@@ -386,14 +412,14 @@
 	</screen>
 
 	<!--  Manual Addons Install FHD -->
-	<screen name="OPD_Manual_installation" position="fill" title="Manual Addons Installation" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="Installer_Addon" position="fill" title="Manual Addons Installation" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nR"/>
-		<widget name="status" position="70,180" size="820,40" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
+		<widget name="infotext" position="70,180" size="820,40" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
 		<eLabel position="70,240" size="820,1" backgroundColor="#10303030" zPosition="2"/>
-		<widget name="listaaddonow" position="70,270" size="820,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="info" position="70,270" size="820,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="oDreamy-FHD/menu/utility.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<!-- eLabel name="DEBUG" text="PE019" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
@@ -598,11 +624,11 @@
 	</screen>
 
 	<!-- Plugin Addons FHD -->
-	<screen name="OPDAddonMenu" position="fill" title="Addons Panel" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="AddonsUtility" position="fill" title="Addons Panel" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
-		<panel name="nR"/>
+		<panel name="nRGYB"/>
 		<ePixmap position="900,180" size="10,720" pixmap="oDreamy-FHD/box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget name="list" position="70,180" size="840,720" itemHeight="72" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<ePixmap pixmap="oDreamy-FHD/menu/plugin_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
@@ -669,34 +695,35 @@
    	</screen>
 	
 	<!--  OPENDROID News Updates OKK -->
-	<screen name="SoftwarePanel" position="fill" title="OPD Software Panel" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p800_Template" />
-		<panel name="p800_Logo" />
-		<panel name="p800_Ext" />
-		<panel name="p800_DateMid" />
-		<panel name="sRG"/>
-		<widget name="packagetext" position="400,30" size="250,30" zPosition="1" font="Regular;33" halign="left" transparent="1" />
-		<widget name="packagenr" position="350,30" size="50,30" zPosition="1" font="Regular;33" halign="left" transparent="1" />
-		<widget source="list" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand" transparent="1">
-			  <convert type="TemplatedMultiContent">
-			      {"template": [
-			      MultiContentEntryText(pos = (70, 0), size = (750, 40), font=0, text = 0),
-			      MultiContentEntryText(pos = (70, 40), size = (750, 24), font=1, text = 3),
-			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (40, 40), png = 1),
-			      ],
-			      "fonts": [gFont("Regular", 30),gFont("Regular", 22)],
-			      "itemHeight": 72
-			      }
-			  </convert>
+		<screen name="SoftwarePanel" position="fill" title="SoftwarePanel" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="nRG"/>
+		<eLabel                    position="70,180"  size="825,50" backgroundColor="bluette" />
+		<widget source="list" render="Listbox" position="70,240" size="840,640" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="header" 
+		        backgroundColorSelected="bluette" foregroundColorSelected="white" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 1), size = (750, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (10, 40), size = (810, 30), font=1, color=0x91c7ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryPixmapAlphaBlend(pos = (770, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (0, 50), size = (700, 0), png = 5), # index 5 is the div pixmap
+					],
+				"fonts": [gFont("Regular",32),gFont("Regular",26)],
+				"itemHeight": 80
+				}
+			</convert>
 		</widget>
-		<ePixmap pixmap="oDreamy/menu/ico_opendroid.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
-                            <widget name="a_off" position="1470,120" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/OPENDROID/icons/aoff.png" alphatest="on" />
-		<widget name="a_red" position="1470,120" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/OPENDROID/icons/ared.png" alphatest="on" />
-		<widget name="a_yellow" position="1470,120" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/OPENDROID/icons/ayellow.png" alphatest="on" />
-		<widget name="a_green" position="1470,120" zPosition="1" size="36,97" pixmap="/usr/lib/enigma2/python/OPENDROID/icons/agreen.png" alphatest="on" />
-		<widget name="feedstatusRED" position="1473,121" size="200,30" zPosition="1" font="Regular;33" halign="left" foregroundColor="layer-b-foreground" backgroundColor="layer-b-background" transparent="1" />
-		<widget name="feedstatusYELLOW" position="1473,153" size="200,30" zPosition="1" font="Regular;33" halign="left" foregroundColor="layer-b-foreground" backgroundColor="layer-b-background" transparent="1" />
-		<widget name="feedstatusGREEN" position="1473,185" size="200,30" zPosition="1" font="Regular;33" halign="left" foregroundColor="layer-b-foreground" backgroundColor="layer-b-background" transparent="1" />
+		<widget name="a_off"    pixmap="icons/aoff.png"    position="960,600" size="256,256" zPosition="1" alphatest="blend" />
+		<widget name="a_red"    pixmap="icons/ared.png"    position="960,600" size="256,256" zPosition="1" alphatest="blend" />
+		<widget name="a_yellow" pixmap="icons/ayellow.png" position="960,600" size="256,256" zPosition="1" alphatest="blend" />
+		<widget name="a_green"  pixmap="icons/agreen.png"  position="940,600" size="256,256" zPosition="1" alphatest="blend" />
+		<widget name="feedstatusRED"    position="960,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
+		<widget name="feedstatusYELLOW" position="960,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
+		<widget name="feedstatusGREEN"  position="960,870" size="200,40" zPosition="1" font="Regular;30" halign="left" transparent="1" />
+		<widget name="packagetext"      position="70,180" size="820,40" font="Regular;36" halign="left" foregroundColor="#ffffff" backgroundColor="bluette" transparent="0" zPosition="1" />
+		<widget name="packagenr"        position="430,180" size="100,40" zPosition="1" font="Regular;36" halign="left" foregroundColor="yellow" backgroundColor="bluette" transparent="1" />
 		<!-- eLabel name="DEBUG" text="PE038" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -915,6 +942,30 @@
 		<widget name="active"   position="60,480" size="645,40" font="Regular;28" halign="center" valign="center" backgroundColor="green" zPosition="1" />
 		<ePixmap position="950,645" size="256,256" pixmap="menu/swapp.png" alphatest="blend"/>
  		<!-- eLabel name="DEBUG" text="PE043" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<!-- OPD LED -->
+	<screen name="LED_GigaSetup" position="fill" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="nRG"/>
+		<widget name="config" position="50,160" size="800,680" font="Regular;28" itemHeight="40" backgroundColor="header" transparent="1" />
+		<!--eLabel name="DEBUG" text="PE044" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<!-- OPD VFDSkinSelector -->
+	<screen name="VFDSkinSelector" position="fill" title="VFDSkin Selector" flags="wfNoBorder" backgroundColor="transparent">
+	              <panel name="p800_Template"/>
+	              <panel name="nRGYB" />
+	              <panel name="p800_DateMid" />
+	                            <eLabel text="Select skin:" position="350,330" size="250,26" zPosition="1" foregroundColor="#FFE500" font="Regular;28" halign="left" />
+			<eLabel text="Preview:" position="680,330" size="250,26" zPosition="1" foregroundColor="#FFE500" font="Regular;28" halign="left" />
+			<widget name="SkinList" render="Listbox" position="350,360" size="270,200" zPosition="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+			<widget name="Preview" position="680,365" size="280,210" zPosition="1" backgroundColor="background" transparent="0" alphatest="on" />
+			<eLabel text="Select your skin and press OK to activate the selected skin" position="300,800" halign="center" size="700,26" zPosition="1" foregroundColor="#FFE500" font="Regular;28" />
+
+		<!--eLabel name="DEBUG" text="PE045" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  ********** STOP VERIFY THIS ********** -->
