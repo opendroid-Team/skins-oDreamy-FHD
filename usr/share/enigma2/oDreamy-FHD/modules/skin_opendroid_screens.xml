@@ -34,10 +34,10 @@
 		<panel name="nRGYB"/>
 		<ePixmap pixmap="oDreamy-FHD/menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="70,150" zPosition="3" size="120,157" pixmap="oDreamy-FHD/icons/emupic.png" alphatest="blend" transparent="1" />
-		<widget name="config"    position="180,260" size="710,50" font="Regular;32" itemHeight="40" halign="left" valign="center" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="1"/>
-		<widget name="actifcam"  position="180,210" size="710,40" font="Regular;32" halign="right" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3"  />
- 		
-		<eLabel position="180,305" size="710,1" backgroundColor="#10404040" zPosition="2"/>
+		<widget name="config"    position="210,150" size="670,50" font="Regular;32" itemHeight="35" transparent="1" zPosition="1" />
+		<widget name="actifcam"  position="230,240" size="670,40" font="Regular;32" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" />
+ 		<widget name="actifcam2" position="230,280" size="670,50" font="Regular;32" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" />
+		<eLabel position="180,325" size="710,1" backgroundColor="#10404040" zPosition="2"/>
 		<!-- is crypted ? -->
 		<ePixmap position="70,347" size="80,40" pixmap="oDreamy-FHD/icons/ico_crypt_off.png" alphatest="blend" /> 
 		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/ico_crypt_on.png" position="70,347" zPosition="4" size="80,40" alphatest="blend" >

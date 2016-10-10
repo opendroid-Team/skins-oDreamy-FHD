@@ -21,53 +21,86 @@
 	<include filename="/usr/share/enigma2/oDreamy-FHD/modules/skin_opendroid_screens.xml"/>
 
 	<!-- Fonts FHD -->
-	 <fonts>
+	<fonts>
 		<font name="LCD"         filename="lcd.ttf"         scale="100"/>
 		<font name="Console"     filename="tuxtxt.ttf"      scale="100"/>
 		<font name="Fixed"       filename="andale.ttf"      scale="100"/>
 		<font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1"/>
 		<font name="Regular"     filename="/usr/share/enigma2/oDreamy-FHD/fonts/verdana.ttf"   scale="93"/>
-		<alias name="Body" font="Regular" size="42" height="60" />
-		<alias name="TextNormal" font="Regular" size="42" height="60" />
-		<alias name="ChoiceList" font="Regular" size="30" height="60" />
-		<alias name="FileList" font="Regular" size="42" height="60"/>
-		<alias name="FileListMulti" font="Regular" size="42" height="60"/>
-		<alias name="PluginBrowser0" font="Regular" size="34" height="75"/>
-		<alias name="PluginBrowser1" font="Regular" size="30"/>
-		<alias name="ServiceInfo" font="Regular" size="42" height="6"/>
-		<alias name="SelectionList" font="Regular" size="42" height="60"/>
-		<alias name="VirtualKeyboard" font="Regular" size="34" height="68"/>
-		<alias name="HelpMenuList" font="Regular" size="40" height="60"/>
-		<alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
-		<alias name="HelpMenuListExt1" font="Regular" size="32"/>
+		<alias name="Body"                      font="Regular" size="32" height="50" />
+		<alias name="TextNormal"                font="Regular" size="30" height="50" />
+		<alias name="ChoiceList"                font="Regular" size="32" height="50" />
+		<alias name="FileList"                  font="Regular" size="30" height="50"/>
+		<alias name="FileListMulti"             font="Regular" size="30" height="50"/>
+		<alias name="PluginBrowser0"            font="Regular" size="32" height="76"/>
+		<alias name="PluginBrowser1"            font="Regular" size="22"/>
+		<alias name="ServiceInfo"               font="Regular" size="30" height="45"/>
+		<alias name="SelectionList"             font="Regular" size="28" height="50" />
+		<alias name="PartnerBoxEntryList0"      font="Regular" size="28" height="38"/>
+		<alias name="PartnerBoxEntryList1"      font="Regular" size="28"/>
+		<alias name="PartnerBoxE2TimerMenu0"    font="Regular" size="32" height="114"/>
+		<alias name="PartnerBoxE2TimerMenu1"    font="Regular" size="28"/>
+		<alias name="PartnerBoxBouquetList0"    font="Regular" size="32" height="45"/>
+		<alias name="PartnerBoxBouquetList1"    font="Regular" size="28"/>
+		<alias name="PartnerBoxChannelList0"    font="Regular" size="32" height="114"/>
+		<alias name="PartnerBoxChannelList1"    font="Regular" size="28"/>
+		<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
+		<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
+		<alias name="VirtualKeyboard"           font="Regular" size="34" height="50"/>
+		<alias name="HelpMenuList"              font="Regular" size="30" height="45"/>
+		<alias name="HelpMenuListExt0"          font="Regular" size="32" height="75"/>
+		<alias name="HelpMenuListExt1"          font="Regular" size="28"/>
+		<alias name="Dreamexplorer"             font="Regular" size="28" height="38"/>
+		<alias name="PlayList"                  font="Regular" size="28" height="50"/>	
+		<alias name="MenuList"                  font="Regular" size="28" height="50"/>	
 	</fonts>
 
 	<parameters>
-		<parameter name="FileListIcon" value="10,7,53,38"/>
-		<parameter name="FileListName" value="80,3,900,60"/>
-		<parameter name="FileListMultiLock" value="10,5,50,50"/>
-		<parameter name="FileListMultiIcon" value="70,5,50,50"/>
-		<parameter name="FileListMultiName" value="130,3,1000,60"/>
-		<parameter name="ChoicelistIcon" value="10,4,67,48"/>
-		<parameter name="ChoicelistDash" value="0,4,1000,60"/>
-		<parameter name="ChoicelistName" value="80,4,1000,60"/>
-		<parameter name="PluginBrowserIcon" value="10,8,150,60"/>
-		<parameter name="PluginBrowserName" value="180,0,40"/>
-		<parameter name="PluginBrowserDescr" value="180,38,35"/>
-		<parameter name="PluginBrowserDownloadIcon" value="10,0,90,75"/>
-		<parameter name="PluginBrowserDownloadName" value="120,0,40"/>
-		<parameter name="PluginBrowserDownloadDescr" value="120,38,35"/>
-		<parameter name="ServiceInfo" value="0,0,450,50"/>
-		<parameter name="ServiceInfoLeft" value="0,0,450,50"/>
-		<parameter name="ServiceInfoRight" value="450,0,1000,60"/>
-		<parameter name="SelectionListLock" value="10,5,35,35"/>
-		<parameter name="SelectionListLockOff" value="10,5,35,35"/>
-		<parameter name="SelectionListDescr" value="60,4,1000,60"/>
-		<parameter name="ConfigListSeperator" value="300"/>
-		<parameter name="VirtualKeyboard" value="68,68"/>
-		<parameter name="HelpMenuListHlp" value="0,0,900,60"/>
-		<parameter name="HelpMenuListExtHlp0" value="0,0,900,60"/>
-		<parameter name="HelpMenuListExtHlp1" value="0,42,900,60"/>
+		<parameter name="ConfigListSeperator" value="320" />
+		<parameter name="ChoicelistDash" value="0,3,1000,50" />
+		<parameter name="ChoicelistName" value="85,3,1000,50" />
+		<parameter name="ChoicelistIcon" value="10,4,64,50" />
+		<parameter name="FileListName" value="68,4,1000,50" />
+		<parameter name="FileListIcon" value="7,4,52,50" />
+		<parameter name="FileListMultiName" value="90,3,1000,50" />
+		<parameter name="FileListMultiIcon" value="45, 4, 50, 50" />
+		<parameter name="FileListMultiLock" value="2,0,50,50" />
+		<parameter name="PluginBrowserName" value="180,8,38" />
+		<parameter name="PluginBrowserDescr" value="180,42,25" />
+		<parameter name="PluginBrowserIcon" value="15,8,150,60" />
+		<parameter name="PluginBrowserDownloadName" value="120,8,38" />
+		<parameter name="PluginBrowserDownloadDescr" value="120,42,25" />
+		<parameter name="PluginBrowserDownloadIcon" value="15,0,90,76" />
+		<parameter name="ServiceInfo" value="0,0,450,50" />
+		<parameter name="ServiceInfoLeft" value="0,0,450,45" />
+		<parameter name="ServiceInfoRight" value="450,0,1000,45" />
+		<parameter name="SelectionListDescr" value="55, 3, 1000, 50" />
+		<parameter name="SelectionListLock" value="10, 7, 50, 50" />
+		<parameter name="VirtualKeyboard" value="60, 50" />
+		<parameter name="PartnerBoxEntryListName" value="8, 2, 225, 38" />
+		<parameter name="PartnerBoxEntryListIP" value="180, 2, 225, 38" />
+		<parameter name="PartnerBoxEntryListPort" value="405, 2, 150, 38" />
+		<parameter name="PartnerBoxEntryListType" value="615, 2, 150, 38" />
+		<parameter name="PartnerBoxTimerServicename" value="0, 0, 45" />
+		<parameter name="PartnerBoxTimerName" value="0, 42, 30" />
+		<parameter name="PartnerBoxE1TimerTime" value="0, 78, 255, 30" />
+		<parameter name="PartnerBoxE1TimerState" value="255, 78, 255, 30" />
+		<parameter name="PartnerBoxE2TimerTime" value="0, 78, 225, 30" />
+		<parameter name="PartnerBoxE2TimerState" value="225, 78, 225, 30" />
+		<parameter name="PartnerBoxE2TimerIcon" value="735, 8, 60, 60" />
+		<parameter name="PartnerBoxBouquetListName" value="0, 0, 45" />
+		<parameter name="PartnerBoxChannelListName" value="0, 0, 45" />
+		<parameter name="PartnerBoxChannelListTitle" value="0, 42, 30" />
+		<parameter name="PartnerBoxChannelListTime" value="0, 78, 225, 30" />
+		<parameter name="HelpMenuListHlp" value="0, 0, 900, 42" />
+		<parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39" />
+		<parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30" />
+		<parameter name="AboutHddSplit" value="1" />
+		<parameter name="DreamexplorerName" value="62, 0, 1200, 38" />
+		<parameter name="DreamexplorerIcon" value="15, 4, 30, 30" />
+		<parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25" />
+		<parameter name="PlayListName" value="65,2,1000,50" />
+		<parameter name="PlayListIcon" value="10,0,50,50" />
 	</parameters>
 	<!-- Colors FHD --> 
 	<colors> 
@@ -386,7 +419,25 @@
 	</screen>
 
 	<!-- ********** SKIN PANELS ********** -->
-	
+		<!-- Menu FHD -->
+	<screen name="Menu" position="fill"  title="Menu" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<panel name="MenuTemplate" />
+		<ePixmap pixmap="menu/setup_selection.png" position="860,645" size="256,256" zPosition="2" alphatest="blend" />
+	</screen> 
+
+	<!--  About -->
+	<screen name="About" position="fill" title="About" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<widget name="AboutScrollLabel" position="70,180"      size="840,740" font="Regular;26" transparent="0" zPosition="1"/>
+		<widget source="lab1" render="Label" position="70,800" size="820,30"  font="Boldit;26" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"/>
+		<widget source="lab2" render="Label" position="70,830" size="820,30"  font="Italic;26" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2"/>
+		<widget source="lab3" render="Label" position="70,860" size="820,30"  font="Italic;30" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="1"/>
+		<ePixmap position="955,640" size="300,300" pixmap="menu/ico_team.png" alphatest="blend"/>
+		<ePixmap position="60,970"  size="700,80"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+	</screen>
+
 	<!-- About FHD -->
 	<screen name="AboutTeam" position="fill" title="About Team" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<panel name="p800_Template" />
