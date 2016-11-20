@@ -26,6 +26,19 @@
 		<!-- eLabel name="DEBUG"  text="PE001" position="40,40" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
+	<!--   Info FHD -->
+	<screen name="Info" title="Info-box" position="fill" backgroundColor="background" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p900_Date"/>
+		<ePixmap position="950,645" size="256,256" pixmap="menu/info_screen.png" alphatest="blend"/>
+		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<widget name="label1" position="70,190" size="840,720"  zPosition="1" halign="center" font="Regular;32" foregroundColor="yellow" backgroundColor="header" transparent="1"/>
+		<widget name="label2" position="70,150" size="840,720" zPosition="1" halign="center" font="Regular;32" foregroundColor="bluette"     backgroundColor="header" transparent="1"/>
+		<!-- eLabel name="DEBUG"  text="PANEL E011" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	
 	<!--   EmuManager FHD -->
 	<screen name="BluePanel" title="Emu Manager" position="fill" backgroundColor="background" flags="wfNoBorder">
 		<panel name="p800_Template" />
@@ -34,9 +47,9 @@
 		<panel name="nRGYB"/>
 		<ePixmap pixmap="oDreamy-FHD/menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="70,150" zPosition="3" size="120,157" pixmap="oDreamy-FHD/icons/emupic.png" alphatest="blend" transparent="1" />
-		<widget name="config"    position="210,150" size="670,50" font="Regular;32" itemHeight="35" transparent="1" zPosition="1" />
-		<widget name="actifcam"  position="230,240" size="670,40" font="Regular;32" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" />
- 		<widget name="actifcam2" position="230,280" size="670,50" font="Regular;32" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" />
+		<widget name="config"    position="210,150" size="670,100" font="Regular;30" itemHeight="35" transparent="1" zPosition="1" />
+		<widget name="actifcam"  position="210,257" size="670,30" font="Regular;28" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" />
+ 		<widget name="actifcam2" position="210,292" size="670,30" font="Regular;28" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3" />
 		<eLabel position="180,325" size="710,1" backgroundColor="#10404040" zPosition="2"/>
 		<!-- is crypted ? -->
 		<ePixmap position="70,347" size="80,40" pixmap="oDreamy-FHD/icons/ico_crypt_off.png" alphatest="blend" /> 
@@ -310,6 +323,18 @@
 		</widget>
 		<!-- eLabel name="DEBUG" text="PE010" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
+	
+	<!--  DevicePanelConf FHD -->
+	<screen name="DevicePanelConf" position="fill" title="Choose where to mount your devices to" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_Date" />
+		<panel name="nRG"/>
+		<widget name="Linconn" position="100,550" size="810,70" font="Regular;39" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
+		<widget name="config" position="70,180" size="810,450" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<ePixmap pixmap="oDreamy-FHD/menu/ico_storage.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		<!-- eLabel name="DEBUG"  text="PANEL E016" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
 
 	<!--   NetBrowser FHD -->
 	<screen name="NetBrowser" position="fill" title="Select Network Interface" backgroundColor="transparent" flags="wfNoBorder" >
@@ -423,6 +448,87 @@
 		<ePixmap pixmap="oDreamy-FHD/menu/utility.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<!-- eLabel name="DEBUG" text="PE019" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
+	
+	<!-- Manual Ipk Installer -->
+	<screen name="ManualPanel" title="Manual Install Ipk Packages" position="fill" backgroundColor="transparent" flags="wfNoBorder" > 
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<widget name="list" position="70,180" size="685,40" font="Regular;28" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2"/>
+		<widget name="list" position="70,180" scrollbarMode="showOnDemand" itemHeight="40" size="820,540" backgroundColor="header" transparent="1" zPosition="2"/>
+		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="955,640" size="300,300" pixmap="menu/utility.png" alphatest="blend"/>
+		<!-- eLabel name="DEBUG" text="OPD24" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<!-- Packet Manager FHD -->
+	<screen name="PanelIPKInstaller" title="Panel IPK Installer" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="nRG"/>
+		<ePixmap position="955,640" size="300,300" pixmap="menu/utility.png" alphatest="blend" zPosition="1" />
+		<widget name="list" position="70,180" size="820,520" font="Regular;38" itemHeight="45" scrollbarMode="showOnDemand" transparent="1">
+		      <convert type="StringList" />
+		</widget>
+		<!--eLabel name="DEBUG" text="S199" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<!-- Packet Manager FHD -->
+	<screen name="PanelTGzInstaller" title="Panel TGz Installer" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="nRG"/>
+		<widget name="list" position="70,180" size="820,520" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<ePixmap position="955,640" size="300,300" pixmap="menu/utility.png" alphatest="blend" zPosition="1" />
+		<!--eLabel name="DEBUG" text="S199" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<!-- Packet Manager FHD -->
+	<screen name="AdvInstallIpk" title="Adv. Install Ipk" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="nRGY"/>
+		<ePixmap position="955,640" size="300,300" pixmap="menu/utility.png" alphatest="blend" zPosition="1" />
+		<widget name="list" position="70,180" size="820,520" font="Regular;38" itemHeight="45" scrollbarMode="showOnDemand" transparent="1">
+		      <convert type="StringList" />
+		</widget>
+		<!--eLabel name="DEBUG" text="S199" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<!-- Packet Manager FHD -->
+	<screen name="RemoveIPK" title="Remove IPK" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRG"/>
+		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="1225,180" size="10,720" zPosition="2" alphatest="blend"/>
+		<widget source="list" render="Listbox" position="45,180" size="1190,720" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"
+			selectionPixmap="box/slider72.png" backgroundPixmap="box/sliderb72.png" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60,1),  size = (1160,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (60,36), size = (1160,30), font=1, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryPixmapAlphaTest(pos = (5,1), size = (48,48), png = 4), # index 5 is the status pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (1100,0), png = 5), # index 6 is the div pixmap
+					],
+					"fonts": [gFont("Regular",35),gFont("Regular",28)],
+					"itemHeight": 72
+				}
+			</convert>
+		</widget>
+		<!--eLabel name="DEBUG" text="S199" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+		
+	<!-- Download Addons FHD -->
+	<screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<widget name="text" position="70,180" size="1160,50" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" halign="left" transparent="1"/>
+		<widget name="list" position="70,180" size="1160,700" font="Regular;32" itemHeight="70" scrollbarMode="showOnDemand" backgroundColor="header" zPosition="1"/>
+		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="1220,180" size="10,700" zPosition="2" alphatest="blend"/>
+		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<!--eLabel name="DEBUG" text="S200" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
 
 	<!--  E2 Config Info FHD -->
 	<screen name="Enigma2ConfigInfo" position="fill" title="Enigma2 Config" backgroundColor="transparent" flags="wfNoBorder" >

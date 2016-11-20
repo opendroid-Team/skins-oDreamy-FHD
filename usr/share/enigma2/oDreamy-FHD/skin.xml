@@ -2858,7 +2858,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<panel name="nRGY"/>
+		<panel name="nRGYB"/>
 		<widget name="imageList" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="356,256" pixmap="menu/memory.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="S220" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
