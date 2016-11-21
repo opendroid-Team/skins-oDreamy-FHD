@@ -37,7 +37,11 @@
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy-FHD/menu/timer_edit.png"           position="860,645" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy-FHD/menu/bluepanel.png"           position="860,645" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+			<convert type="MenuEntryCompare">Blue Panel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+				<widget source="menu" render="Pixmap" pixmap="oDreamy-FHD/menu/timer_edit.png"           position="860,645" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
