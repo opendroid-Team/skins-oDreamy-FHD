@@ -528,6 +528,15 @@
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
 		<!--eLabel name="DEBUG" text="S200" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
+		<!-- InstallFeed FHD -->
+	<screen name="InstallFeed" title="Insatall extensions from feed" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRG"/>
+		<widget name="list" position="70,180" size="1160,700" font="Regular;32" itemHeight="70" scrollbarMode="showOnDemand" backgroundColor="header" zPosition="1"/>
+		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="1220,180" size="10,700" zPosition="2" alphatest="blend"/>
+		<!--eLabel name="DEBUG" text="S200" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
 
 
 	<!--  E2 Config Info FHD -->
