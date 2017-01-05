@@ -2314,341 +2314,336 @@ flags=RT_HALIGN_CENTER, text=2),], "fonts": [gFont("Regular", 32), gFont("Regula
 <widget source="key_blue" render="Label" position="400,856" zPosition="2" size="300,40" valign="center" halign="center" font="Regular; 32" foregroundColor="blue" transparent="1" />
 </screen>
 
- <!-- EMCSelection -->
+	<!-- ********** Enhanced Movie Center ********** P036 FHD -->
 
-<screen name="EMCSelection" position="center,center" size="1920,1080" title="Enhanced Movie Center" backgroundColor="black" flags="wfNoBorder">
-  <!-- Panel SatType -->
-<widget source="Service" render="Label" position="1601,155" size="200,44" font="Regular; 30" foregroundColor="orange" halign="right" backgroundColor="black" transparent="1">
-  <convert type="EMCMovieInfo">FileSize</convert>
-</widget>
-<widget source="Service" render="Label" position="1512,156" size="120,41" font="Regular; 30" halign="left" foregroundColor="orange" backgroundColor="black" transparent="1">
-  <convert type="EMCServiceTime">Duration</convert>
-  <convert type="EMCClockToText">Format:%Hh:%Mmin</convert>
-</widget>
-<widget source="Service" render="Label" position="1374,156" size="107,44" font="Regular; 30" foregroundColor="orange" backgroundColor="black" transparent="1">
-  <convert type="EMCServiceTime">EndTime</convert>
-  <convert type="EMCClockToText">Format:- %H:%M </convert>
-</widget>
-<widget source="Service" render="Label" position="1274,155" size="108,44" font="Regular; 30" halign="left" foregroundColor="orange" backgroundColor="black" transparent="1">
-  <convert type="EMCServiceTime">StartTime</convert>
-  <convert type="EMCClockToText">Format:%H:%M </convert>
-</widget>
-  <widget source="Service" render="Label" position="64,877" size="927,56" font="Regular; 34" foregroundColor="green" halign="left" backgroundColor="black" transparent="1">
-    <convert type="EMCServiceTime">StartTime</convert>
-    <convert type="EMCClockToText">Date</convert>
-  </widget>
-  <widget source="Service" render="Label" position="64,620" size="1175,250" font="Regular; 26" zPosition="2" foregroundColor="yellow" backgroundColor="black" transparent="1" halign="center">
-    <convert type="EMCMovieInfo">ShortDescription</convert>
-  </widget>
-  <!-- <widget source="Title" render="Label" position="1269,43" size="589,72" font="Regular; 50" foregroundColor="yellow" backgroundColor="black" transparent="1" /> -->
-<widget source="session.CurrentService" render="Label" position="1262,38" size="600,77" font="Regular; 30" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" foregroundColor="red">
-<convert type="DiskInfo">Format: %M %C (%F) hdd</convert>
-</widget>
-  <widget name="Cover" position="1271,220" size="593,713" zPosition="0" transparent="1" alphatest="blend" />
-  <widget name="key_yellow" position="679,980" size="222,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <widget name="key_green" position="399,980" size="236,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <widget name="key_red" position="109,980" size="238,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <ePixmap position="70,988" pixmap="oDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <eLabel position="50,30" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="50,30" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,125" size="1202,1" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1250,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <!-- Code -->
-  <ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/buttons/angle30.png" alphatest="blend" zPosition="2" />
-  <ePixmap position="75,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
-  <eLabel text="E n h a n c e d  M o v i e  C e n t e r" position="143,37" size="1048,81" font="Regular; 55" foregroundColor="blue" backgroundColor="black" transparent="1" />
-  <!-- Middle -->
-  <!-- <eLabel position="50,140" size="1200,800" backgroundColor="rds_text_bg" zPosition="-1" /> -->
-  <ePixmap pixmap="oDreamy-FHD/movie.png" position="50,140" size="1200,800" zPosition="-2" transparent="1" alphatest="blend" />
-  <eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
-  <eLabel position="50,140" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1250,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,940" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="900,937" size="352,10" backgroundColor="bluette" zPosition="0" />
-  <!-- Footer -->
-  <eLabel position="50,955" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="50,955" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1260,955" size="250,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="1260,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1260,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="350,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="1520,955" size="350,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <!-- Analogic Clock -->
-  <widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend">
-    <convert type="ExtraNumText">secHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
-    <convert type="ExtraNumText">minHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
-    <convert type="ExtraNumText">hourHand</convert>
-  </widget>
-  <!-- Clock %d.%m.%Y - %H:%M:%S -->
-  <ePixmap position="1275,975" size="90,60" pixmap="oDreamy-FHD/icons/select.png" alphatest="blend" zPosition="2" />
-  <ePixmap position="1535,970" size="80,80" pixmap="oDreamy-FHD/icons/clock50.png" alphatest="blend" zPosition="2" />
-  <widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1">
-    <convert type="ClockToText">Format:%H:%M:%S</convert>
-  </widget>
-  <eLabel position="1260,30" size="610,95" backgroundColor="rds_text_bg" zPosition="-2" />
-  <eLabel position="1260,30" size="610,2" backgroundColor="bluette" zPosition="-2" />
-  <eLabel position="1260,30" size="2,95" backgroundColor="bluette" zPosition="-2" />
-  <eLabel position="1260,125" size="610,2" backgroundColor="bluette" zPosition="-2" />
-  <eLabel position="1260,215" size="610,727" backgroundColor="trbluette" zPosition="-2" />
-  <ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <widget name="key_blue" position="954,980" size="275,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <eLabel text="Menu" position="1390,965" size="200,43" font="Regular;32" valign="center" foregroundColor="unb0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-  <eLabel text="Info" position="1390,1002" size="200,43" font="Regular;32" valign="center" foregroundColor="unb0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-  <!-- List Channel -->
-  <ePixmap position="1230,160" size="10,765" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
-  <widget name="list" position="70,163" size="1169,439" itemHeight="40" CoolFont="Regular;26" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="745" CoolFolderSize="745" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="#00000000" foregroundColorSelected="#ffffff" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
-  <!-- Event Title -->
-  <eLabel position="1260,145" size="610,68" backgroundColor="rds_text_bg" zPosition="-1" />
-  <!-- Service Name -->
-  <!-- Event Name - Time -->
-  <!-- Interlinea 23 size 450 -->
-  <!-- Channel Reference  
-		<widget position="835,535" size="405,25" source="ServiceEvent" render="EGShowReference" halign="center" font="Regular;19" foregroundColor="ltbluette" backgroundColor="bluette" zPosition="1" transparent="1" />
-		-->
-</screen>
-<screen name="EMCMediaCenter" position="0,0" size="1920,1080" title="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder">
+ 	<screen name="EMCSelection" position="fill" title="Enhanced Movie Center" backgroundColor="#FF000000" flags="wfNoBorder"> <panel name="p800_Template" /> 
+		<panel name="p800_Date" /> 
+		<panel name="nRGYB" /> 
+		<panel name="MI" /> 
+		<eLabel position="1260,30" size="610,96" backgroundColor="#201b3c85" zPosition="-2" /> 
+		<eLabel position="1262,32" size="606,92" backgroundColor="#20000000" zPosition="-2" /> 
+		<eLabel position="1260,140" size="610,210" backgroundColor="#201b3c85" zPosition="-2" /> 
+		<eLabel position="1260,357" size="610,585" backgroundColor="#20000000" zPosition="-2" /> 
+		<eLabel position="1260,345" size="610,10" backgroundColor="#FF000000" zPosition="-1" /> 
+		<widget alphatest="on" name="Cover" position="1262,363" size="605,571" zPosition="4" /> 
+		<widget name="list" position="70,180" size="1160,460" itemHeight="40" CoolFont="Regular;30" CoolSelectFont="Regular;30" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#ffffff" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="bluette" foregroundColorSelected="#ffffff" backgroundColor="header" scrollbarMode="showNever" transparent="1" zPosition="1" />
+		<!-- Panel Info -->
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" /> 
+		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" /> 
+		<widget source="Service" render="Label" position="1420,170" size="615,40" font="Regular; 32" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1"> 
+			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Date</convert>
+		</widget> 
+		<widget source="Service" render="Label" position="1420,225" size="150,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
+			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Format:%H:%M </convert>
+		</widget> 
+		<widget source="Service" render="Label" position="1530,225" size="150,40" font="Regular; 36" foregroundColor="yellow" backgroundColor="bluette" transparent="1"> 
+			<convert type="EMCServiceTime">EndTime</convert> <convert type="EMCClockToText">Format:- %H:%M </convert> 
+		</widget>
+		<widget source="Service" render="Label" position="1610,227" size="250,40" font="Regular; 32" halign="right" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
+			<convert type="EMCMovieInfo">FileSize</convert> 
+		</widget>  
+		<widget source="Service" render="Label" position="1420,280" size="300,40" font="Regular; 36" halign="left" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
+			<convert type="EMCServiceTime">Duration</convert> <convert type="EMCClockToText">Format:%Hh:%Mmin</convert> 
+		</widget>
+		<widget source="Service" render="Label" position="70,650" size="1160,260" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"> 
+			<convert type="EMCMovieInfo">ShortDescription</convert> 
+		</widget> 
+	</screen>
+	
+	<screen name="MovieMenu" position="fill" title="EMC menu" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="M"/>
+		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<widget source="menu" render="Listbox" position="70,180" size="840,720" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
+			<convert type="StringList" />
+		</widget>
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen> 
 
- <!-- Bar -->
-  <eLabel position="0,860" size="1920,270" backgroundColor="header" zPosition="-1" />
-  <eLabel position="0,860" size="1920,1" backgroundColor="bluette" zPosition="-1" />
-  <ePixmap pixmap="oDreamy-FHD/buttons/closebarmp.png" position="0,830" size="1720,60" zPosition="-1" alphatest="blend" />
-  <!-- Blinking pixmap (recording in progress) -->
-  <ePixmap position="1575,838" size="45,45" pixmap="oDreamy-FHD/buttons/rec_off.png" alphatest="blend" zPosition="1" />
-  <widget source="session.RecordState" render="Pixmap" position="1575,838" size="45,45" pixmap="oDreamy-FHD/buttons/rec_on.png" alphatest="blend" zPosition="2">
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <!-- Servicename -->
-  <ePixmap position="1660,922" size="220,132" pixmap="oDreamy-FHD/picon_default.png" zPosition="1" alphatest="blend" />
-  <widget name="Cover" position="10,765" size="295,310" zPosition="1" alphatest="on" backgroundColor="transparent" foregroundColor="transparent" />
-  <widget source="session.CurrentService" render="Label" position="316,840" size="1324,40" font="Regular;34" valign="top" noWrap="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <!-- movie length -->
-  <eLabel text="Time :" position="1650,860" size="120,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
-  <widget source="session.CurrentService" render="Label" position="1720,860" size="150,40" font="Regular;32" halign="right" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3">
-    <convert type="ServicePosition">Length</convert>
-  </widget>
-  
-  <!-- Elapsed time -->
-  <widget source="session.CurrentService" render="Label" position="300,935" size="140,50" font="Regular;42" halign="right" backgroundColor="header" transparent="1">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <!-- Progressbar (movie position)-->
-  <eLabel position="460,960" size="960,2" backgroundColor="greentransparent" zPosition="1" />
-  <widget source="session.CurrentService" render="Progress" position="460,958" size="960,6" foregroundColor="bluette" backgroundColor="bluette" transparent="1" zPosition="3">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget source="session.CurrentService" render="PositionGauge" position="360,597" size="620,5" transparent="1">
-    <convert type="ServicePosition">Gauge</convert>
-  </widget>
-  <!-- Remaining time -->
-  <widget source="session.CurrentService" render="Label" position="1450,935" size="250,50" font="Regular;42" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
-    <convert type="ServicePosition">Remaining,Negate</convert>
-  </widget>
-  <!-- Audio icon (is there multichannel audio?) -->
-  <ePixmap pixmap="oDreamy-FHD/icons/ico_dolby_off.png" position="320,1000" size="200,50" zPosition="1" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/ico_dolby_on.png" position="320,1000" size="150,50" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">IsMultichannel</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- HDTV icon -->
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/ico_hd_off.png" position="500,1000" size="150,50" zPosition="1" alphatest="blend">
-    <convert type="ServiceInfo">VideoWidth</convert>
-    <convert type="ValueRange">0,720</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/ico_hd_on.png" position="500,1000" size="150,50" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">VideoWidth</convert>
-    <convert type="ValueRange">721,1980</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- Videoformat icon (16:9?) -->
-  <ePixmap pixmap="oDreamy-FHD/icons/ico_format_off.png" position="680,1000" size="150,50" zPosition="1" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/ico_format_on.png" position="680,1000" size="150,50" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- Panel Video Resolution  -->
-  <widget source="session.CurrentService" render="Label" position="720,1010" size="200,50" font="Regular;40" halign="right" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
-    <convert type="ServiceInfo">VideoWidth</convert>
-  </widget>
-  <eLabel text="x" position="930,1010" size="25,50" font="Regular;40" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3" />
-  <widget source="session.CurrentService" render="Label" position="960,1010" size="200,50" font="Regular;40" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
-    <convert type="ServiceInfo">VideoHeight</convert>
-  </widget>
-</screen>
-<screen name="EnhancedMovieCenterMenu" position="center,center" size="1920,1080" title="EnhancedMovieCenterMenu" backgroundColor="transparent" flags="wfNoBorder">
-  <!-- Panel SatType -->
-  <widget source="Title" render="Label" zPosition="1" position="130,44" size="1099,73" halign="center" font="Regular; 58" foregroundColor="blue" transparent="1" backgroundColor="transpBlack" />
-  <widget source="help" render="Label" position="64,846" size="1167,88" font="Regular; 26" foregroundColor="yellow" backgroundColor="background" />
- <widget name="config" position="64,160" size="1174,673" itemHeight="32" enableWrapAround="1" backgroundColor="background" scrollbarMode="showOnDemand" font="Regular; 28" />  <widget name="key_green" position="399,980" size="236,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <widget name="key_red" position="109,980" size="238,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <ePixmap position="70,988" pixmap="oDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <eLabel position="50,30" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="50,30" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,125" size="1202,1" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1250,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <!-- Code -->
-  <ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/buttons/angle30.png" alphatest="blend" zPosition="2" />
-  <ePixmap position="75,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
-  <!-- Middle -->
-  <eLabel position="50,140" size="1200,800" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
-  <eLabel position="50,140" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1250,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,940" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="900,937" size="352,10" backgroundColor="bluette" zPosition="0" />
-  <!-- Footer -->
-  <eLabel position="50,955" size="1200,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="50,955" size="1200,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1260,955" size="250,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="1260,955" size="250,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1260,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="350,95" backgroundColor="rds_text_bg" zPosition="-1" />
-  <eLabel position="1520,955" size="350,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1520,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <!-- Analogic Clock -->
-  <widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend">
-    <convert type="ExtraNumText">secHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
-    <convert type="ExtraNumText">minHand</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
-    <convert type="ExtraNumText">hourHand</convert>
-  </widget>
-  <!-- Clock %d.%m.%Y - %H:%M:%S -->
-  <ePixmap position="1275,975" size="90,60" pixmap="oDreamy-FHD/icons/select.png" alphatest="blend" zPosition="2" />
-  <ePixmap position="1535,970" size="80,80" pixmap="oDreamy-FHD/icons/clock50.png" alphatest="blend" zPosition="2" />
-  <widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1">
-    <convert type="ClockToText">Format:%H:%M:%S</convert>
-  </widget>
-  <ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
-  <widget name="key_blue" position="954,980" size="275,40" zPosition="5" valign="center" halign="center" backgroundColor="black" font="Regular; 32" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-  <!-- List Channel -->
-  <ePixmap position="1230,160" size="10,765" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
-</screen>
+	<screen name="EMCPlaylist" position="fill" title="EMC Playlist" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="M"/>
+		<widget name="playlist" position="70,180" size="840,720" scrollbarMode="showOnDemand" posColor="#FFFFFF" posColorSel="#FFFFFF" nameColor="#FFFFFF" nameColorSel="#FFFFFF" />
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="cancel" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="ok"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="deleteall" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen>
 
-<screen name="MovieMenu" position="0,0" size="1920,1080" title="EMC menu" backgroundColor="transparent" flags="wfNoBorder">
-  <!-- Date -->
-  <widget source="global.CurrentTime" render="Label" position="730,30" size="400,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1">
-    <convert type="ClockToText">Format %A %d %B </convert>
-  </widget>
-  <eLabel position="50,30" size="1100,95" backgroundColor="background" zPosition="-1" />
-  <eLabel position="50,30" size="1100,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,125" size="1102,1" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1150,30" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <!-- Code -->
-  <ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/buttons/angle30.png" alphatest="blend" zPosition="2" />
-  <ePixmap position="70,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
-  <widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;50" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
-  <!-- Middle -->
-  <eLabel position="50,140" size="1100,800" backgroundColor="background" zPosition="-1" />
-  <eLabel position="50,137" size="770,10" backgroundColor="bluette" zPosition="0" />
-  <eLabel position="50,140" size="1100,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1150,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,140" size="2,800" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,940" size="1100,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="810,937" size="342,10" backgroundColor="bluette" zPosition="0" />
-  <!-- Footer -->
-  <ePixmap position="74,964" size="532,92" pixmap="oDreamy-FHD/icons/opendroidlogo.png" alphatest="blend" zPosition="1" />
-  <eLabel position="50,955" size="1100,95" backgroundColor="trbluette" zPosition="-1" />
-  <eLabel position="50,955" size="1100,2" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="50,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <eLabel position="1150,955" size="2,95" backgroundColor="bluette" zPosition="-1" />
-  <ePixmap position="830,160" size="400,700" pixmap="oDreamy-FHD/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
-  <ePixmap pixmap="oDreamy-FHD/box/maxbargh.png" position="825,190" size="15,680" alphatest="blend" zPosition="5" />
-  <widget source="menu" render="Listbox" font="Regular;28" itemHeight="40" position="65,190" size="775,680" scrollbarMode="showOnDemand" enableWrapAround="1">
-  <convert type="StringList" />
-</widget>
-</screen> 
-  <screen name="EnhancedMovieCenterMenu" position="26,101" size="1020,900" title="EnhancedMovieCenterMenu">
-  <!-- Config Listbox -->
-  <widget name="config" position="10,10" size="990,679" enableWrapAround="1" scrollbarMode="showOnDemand" />
-  <eLabel position="5,705" size="620,2" backgroundColor="un999999" zPosition="1" />
-  <!-- Helptext for each setup-point -->
-  <widget source="help" render="Label" position="-5,721" size="605,88" font="Regular;20" foregroundColor="un999999" />
-  <!-- Color buttons -->
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key-red.png" position="33,829" zPosition="0" size="140,40" transparent="1" alphatest="on" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key-green.png" position="366,820" zPosition="0" size="140,40" transparent="1" alphatest="on" />
-  <widget name="key_red" position="31,828" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#9f1313" transparent="1" shadowColor="#000000" shadowOffset="-1,-1" />
-  <widget name="key_green" position="361,822" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" shadowColor="#000000" shadowOffset="-1,-1" />
-</screen>
-<screen name="DownloadMovieInfo" position="75,115" size="1770,900" title="Movie Information Download (TMDb)">
-  <widget name="movie_name" position="5,5" size="1727,54" zPosition="0" font="Regular; 31" valign="center" transparent="1" foregroundColor="#bab329" backgroundColor="black" />
-  <widget name="movielist" position="10,74" size="1736,647" font="Regular;28" itemHeight="50" scrollbarMode="showOnDemand" />
-  <widget name="resulttext" position="49,737" size="1686,98" zPosition="0" font="Regular; 30" valign="center" transparent="1" foregroundColor="#bab329" backgroundColor="black" />
-  <ePixmap pixmap="oDreamy-FHD/buttons/vmenu_ok.png" position="22,847" size="71,44" alphatest="on" />
-  <widget name="setup" position="95,847" size="300,44" font="Regular; 28" halign="left" valign="center" transparent="1" />
-  <ePixmap pixmap="oDreamy-FHD/buttons/vkey_ok.png" position="423,847" size="71,44" alphatest="on" />
-  <widget name="save" position="472,847" size="300,44" font="Regular; 28" halign="left" valign="center" transparent="1" />
-  <ePixmap pixmap="oDreamy-FHD/buttons/vinfo_ok.png" position="813,847" size="71,44" alphatest="on" />
-  <widget name="movieinfo" position="890,847" size="300,44" font="Regular; 28" halign="left" valign="center" transparent="1" />
-</screen>
-<screen name="MovieInfoPreview" position="center,115" size="1770,900" title="Movie Information Preview">
-	<widget name="movie_name" position="20,5" size="1709,70" zPosition="0" font="Regular; 31" valign="center" transparent="1" foregroundColor="#00bab329" backgroundColor="#000000" />
-	<widget name="previewtext" position="20,93" size="1730,782" font="Regular; 30" />
-</screen>
-<screen name="MovieInfoSetup" position="25,100" size="800,950" title="Movie Information Download Setup">
-	<widget name="config" position="5,10" size="786,858" scrollbarMode="showOnDemand" font="Regular; 28" />
-	<widget name="key_red" position="168,900" size="218,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="#ffffff" font="Regular; 24" />
-	<widget name="key_green" position="556,900" size="202,40" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="#ffffff" font="Regular; 24" />
-	<ePixmap name="red" pixmap="skin_default/buttons/red.png" position="16,900" size="140,40" zPosition="4" transparent="1" alphatest="on" />
-	<ePixmap name="green" pixmap="skin_default/buttons/green.png" position="396,902" size="140,40" zPosition="4" transparent="1" alphatest="on" />
-</screen>
-<screen name="getCover" position="center,115" size="1770,900" title="EMC Cover Selecter">
-	<widget name="poster" zPosition="2" position="26,14" size="737,748" alphatest="on" />
-	<widget name="menulist" position="790,12" size="952,753" font="Regular;34" itemHeight="60" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/cursor.png" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on" />
-	<widget name="info" position="24,785" size="1724,96" zPosition="0" font="Regular; 31" halign="left" valign="center" transparent="1" foregroundColor="#ffffff" backgroundColor="#000000" />
-</screen>
-<screen name="EMCImdbScan" position="center,115" size="1848,900" title="EMC Cover search">
-	<!-- Info: Amount of searched Covers -->
-	<widget name="info" position="26,6" size="900,38" zPosition="0" font="Regular; 31" halign="left" valign="center" transparent="1" foregroundColor="#ffffff" backgroundColor="#000000" />
-	<!-- aktual movie name -->
-	<widget name="m_info" position="28,48" size="800,46" zPosition="0" font="Regular; 34" halign="center" valign="center" transparent="1" foregroundColor="#00bab329" backgroundColor="#000000" />
-	<!-- Movie Listbox -->
-	<widget name="menulist" position="656,110" size="1162,726" font="Regular;28" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on" />
-	<!-- Cover picture -->
-	<widget name="poster" position="28,102" size="585,570" zPosition="4" alphatest="on" />
-	<widget name="done_msg" position="656,844" size="1162,48" zPosition="0" font="Regular; 31" halign="left" valign="center" transparent="1" foregroundColor="green" backgroundColor="black" />
-	<!-- Buttons  -->
-	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key-green.png" position="18,684" size="30,30" alphatest="on" />
-	<widget name="ButtonGreenText" position="58,679" size="476,38" valign="center" halign="left" zPosition="1" font="Regular; 30" transparent="1" />
-	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key-yellow.png" position="16,726" size="30,30" alphatest="on" />
-	<widget name="Manage Cover" position="58,723" size="476,38" font="Regular; 31" halign="left" valign="center" transparent="1" />
-	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key-red.png" position="16,773" size="30,30" alphatest="on" />
-	<widget name="ButtonRedText" position="58,768" size="476,38" valign="center" halign="left" zPosition="1" font="Regular; 30" transparent="1" />
-	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key_menu.png" position="12,819" size="35,25" alphatest="on" />
-	<widget name="Setup" position="58,812" size="476,38" font="Regular; 31" halign="left" valign="center" transparent="1" />
-	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key_ok.png" position="12,860" size="35,25" alphatest="on" />
-	<widget name="Single search" position="58,855" size="478,38" font="Regular; 28" halign="left" valign="center" transparent="1" />
-</screen>
-<screen name="NumberZapExt" position="654,463" size="700,160" title="Channel">
-    <widget name="chPicon" position="474,10" size="220,132" alphatest="on" />
-    <widget name="number" position="5,35" size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
-    <widget name="chNum" position="210,34" size="240,30" halign="left" font="Regular;26" foregroundColor="white" />
-    <widget name="channel" position="5,77" size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
-    <widget name="chName" position="209,75" size="254,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" />
-    <widget name="bouquet" position="5,115" size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
-    <widget name="chBouq" position="215,115" size="254,30" halign="left" font="Regular;24" noWrap="1" foregroundColor="white" />
-</screen>
+        <screen name="EMCPlaylistSetup" position="fill" title="EMC Playlist Setup" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+        	<widget name="config" position="70,180" size="820,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="cancel" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="save"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+        </screen>
+
+	<screen name="EMCImdbScan" position="fill" title="EMC Cover search" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date" />
+		<panel name="p800_Ext_BiN"/>
+		<panel name="M"/>
+		<!-- Movie Listbox --> 
+		<widget name="menulist" position="70,180" size="840,720" font="Regular;26" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on" />
+		<ePixmap position="1270,38"  size="200,90"  pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
+		<!-- Info: Amount of searched Covers -->
+		<widget name="info" position="1380,190" size="480,80" font="Regular;36" halign="center" foregroundColor="#ffffff" backgroundColor="#bluette" transparent="1" zPosition="1" />
+		<!-- aktual movie name -->
+		<widget name="m_info" position="1265,300" size="600,90" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<widget name="done_msg" position="1265,400" size="600,360" font="Regular;30" halign="center" foregroundColor="green" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<!-- Cover picture -->
+		<widget name="no_poster" position="1265,512" size="300,428" zPosition="3" alphatest="on" />
+		<widget name="poster"    position="1262,512" size="300,428" zPosition="4" alphatest="on" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key_menu.png" position="1570,790" size="35,25" alphatest="blend" />
+		<widget name="Setup" position="1620,760" size="300,80" font="Regular; 30" halign="left" valign="center" backgroundColor="header" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key_ok.png" position="1570,880" size="35,25" alphatest="blend" />
+		<widget name="Single search" position="1620,850" size="300,80" font="Regular; 30" halign="left" valign="center" backgroundColor="header" transparent="1" />
+		<!-- Buttons  -->
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="ButtonRedText" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="ButtonGreenText"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="Manage Cover" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen>
+
+	<screen name="getCover" position="fill" title="EMC Cover Selecter" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Date" />
+		<panel name="p800_Ext"/>
+		<panel name="MI"/>
+		<ePixmap position="1270,38" size="200,90"  pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<widget name="menulist" position="70,180"   size="1165,720" font="Regular;36" itemHeight="120" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on" />
+		<widget name="poster"   position="1265,145" size="440,640" alphatest="on" zPosition="2" />
+		<widget name="info"     position="1265,820" size="630,120" font="Regular; 30" halign="center" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<eLabel position="1260,790" size="720,10" backgroundColor="#FF000000" zPosition="1"/>
+	</screen>
+
+	<screen name="DownloadMovieInfo" position="fill" title="Movie Information Download (TMDb)" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date" />
+		<panel name="p800_Ext_BiN"/>
+		<panel name="MI"/>
+		<ePixmap position="1270,38"  size="200,90"  pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
+		<widget name="movie_name" position="70,180" size="820,50"  font="Regular;32" valign="center" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="0" />
+		<widget name="movielist"  position="70,260" size="820,600" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<widget name="resulttext" position="1265,300" size="600,120" font="Regular;30" foregroundColor="#bab329" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<ePixmap pixmap="buttons/vinfo_ok.png" position="813,847" size="71,44" alphatest="on" />
+		<widget name="movieinfo" position="890,847" size="300,44" font="Regular; 28" halign="left" valign="center" transparent="1" />
+		<widget name="setup" position="0,0" size="300,44" font="Regular;28" halign="left" valign="center" transparent="1" />
+		<widget name="save"  position="0,0" size="300,44" font="Regular;28" halign="left" valign="center" transparent="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen>
+
+	<screen name="EnhancedMovieCenterMenu" position="fill" title="EnhancedMovieCenter Menu" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date" />
+		<panel name="p800_Ext_BiN"/>
+		<panel name="nRGYB"/>
+		<ePixmap position="1270,38"  size="200,90"  pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
+		<widget name="config" position="70,180" size="840,720" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />  
+		<widget source="help" render="Label" position="1275,570" size="600,200" font="Regular; 28" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen>
+
+	<screen name="imdbSetup" position="fill" title="EMC Cover search setup" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="nRG"/>
+        	<widget name="config" position="70,180" size="820,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen>
+
+	<screen name="EMCMenu" position="fill" title="EMC menu" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="nRG"/>
+		<widget source="menu" render="Listbox" position="70,180" size="840,720" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="1">
+			<convert type="StringList" />
+		</widget>
+	</screen>
+
+	<screen name="EMCFileBrowser" position="fill" title="EMC Filebrowser" backgroundColor="transparent" flags="wfNoBorder" > 
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+        	<widget name="filelist" position="70,180" size="840,720" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="cancel" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="open"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+        <screen name="EMCPlaylistScreen" position="fill" title="EMC Playlist" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="M"/>
+		<widget name="playlist" position="70,180" size="840,720" scrollbarMode="showOnDemand" posColor="#FFFFFF" posColorSel="#FFFFFF" nameColor="#FFFFFF" nameColorSel="#FFFFFF" />
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="cancel" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="ok"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="deleteall" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+        </screen>
+
+	<screen name="MovieInfoSetup" position="fill" title="Movie Information Download Setup" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid" />
+		<panel name="nRG"/>
+        	<widget name="config" position="70,180" size="820,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen>
+
+	<screen name="EMCDownloadMovieInfo" position="fill" title="Movie Information Download (TMDb)" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date" />
+		<panel name="p800_Ext_BiN"/>
+		<panel name="MI"/>
+		<ePixmap position="1270,38"  size="200,90"  pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
+		<widget name="movie_name" position="70,180" size="820,50"  font="Regular;32" valign="center" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="0" />
+		<widget name="movielist"  position="70,260" size="820,600" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<widget name="resulttext" position="1265,300" size="600,120" font="Regular;30" foregroundColor="#bab329" backgroundColor="bluette" transparent="1" zPosition="1" />
+		<ePixmap pixmap="buttons/vinfo_ok.png" position="813,847" size="71,44" alphatest="on" />
+		<widget name="movieinfo" position="890,847" size="300,44" font="Regular; 28" halign="left" valign="center" transparent="1" />
+		<widget name="setup" position="0,0" size="300,44" font="Regular;28" halign="left" valign="center" transparent="1" />
+		<widget name="save"  position="0,0" size="300,44" font="Regular;28" halign="left" valign="center" transparent="1" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
+	</screen>
+	
+	<screen name="EMCMovieInfoPreview" position="fill" title="Movie Information Preview" backgroundColor="#20000000" flags="wfNoBorder">
+		<widget name="movie_name"  position="30,3"  size="1709,70" zPosition="0" font="Regular; 31" valign="center" transparent="1" foregroundColor="#00bab329" backgroundColor="#000000" />
+		<widget name="previewtext" position="30,140" size="1730,782" font="Regular; 30" />
+	</screen>
+
+	<screen name="MovieInfoPreview" position="fill" title="Movie Information Preview" backgroundColor="#20000000" flags="wfNoBorder">
+		<widget name="movie_name"  position="30,3"  size="1709,70" zPosition="0" font="Regular; 31" valign="center" transparent="1" foregroundColor="#00bab329" backgroundColor="#000000" />
+		<widget name="previewtext" position="30,140" size="1730,782" font="Regular; 30" />
+	</screen>
+
+	<screen name="MovieInfoTMDb" position="fill" title="Movie Information TMDb" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="movie_name" position="20,5" size="960,42" zPosition="0" font="Regular;21" valign="center" halign="center" transparent="1" foregroundColor="unbab329" backgroundColor="black" />
+		<widget name="previewlist" position="240,62" size="740,392" itemHeight="28" font="Regular;20" scrollbarMode="showOnDemand" />
+		<widget name="previewcover" position="20,62" size="204,285" alphatest="blend" zPosition="2" />
+		<widget name="contenttxt" position="240,62" size="740,285" font="Regular;20" />
+		<widget name="runtime" position="20,362" size="200,25" font="Regular;20" foregroundColor="#000066FF" />
+		<widget name="runtimetxt" position="240,362" size="230,25" font="Regular;20" />
+		<widget name="genre" position="20,397" size="200,25" font="Regular;20" foregroundColor="#000066FF" />
+		<widget name="genretxt" position="240,397" size="230,25" font="Regular;20" />
+		<widget name="country" position="530,362" size="200,25" font="Regular;20" foregroundColor="#000066FF" />
+		<widget name="countrytxt" position="750,362" size="230,25" font="Regular;20" />
+		<widget name="release" position="530,397" size="200,25" font="Regular;20" foregroundColor="#000066FF" />
+		<widget name="releasetxt" position="750,397" size="230,25" font="Regular;20" />
+		<widget name="rating" position="20,432" size="200,25" font="Regular;20" foregroundColor="#000066FF" />
+		<widget name="ratingtxt" position="240,432" size="230,25" font="Regular;20" />
+		<widget name="starsbg" position="530,435" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_empty_10.png" zPosition="3" alphatest="blend" />
+		<widget name="stars" position="530,435" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_filled_10.png" zPosition="4" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/line_blue.png" position="50,470" size="900,2" alphatest="on" />
+		<widget name="setup" position="45,475" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+		<widget name="key_menu" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key_menu_line.png" position="45,500" size="150,2" alphatest="on" />
+		<widget name="save" position="320,475" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+		<widget name="key_green" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key-green_line.png" position="320,500" size="150,2" alphatest="on" />
+	</screen>
+	
+	<screen name="EMCMediaCenter" position="0,0" size="1920,1080" title="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,860" size="1920,270" backgroundColor="header" zPosition="-1" />
+		<eLabel position="0,860" size="1920,1" backgroundColor="bluette" zPosition="-1" />
+		<ePixmap pixmap="buttons/closebarmp.png" position="0,830" size="1720,60" zPosition="-1" alphatest="blend" />
+		<!-- Blinking pixmap (recording in progress) -->
+		<ePixmap position="1575,838" size="45,45" pixmap="buttons/rec_off.png" alphatest="blend" zPosition="1" />
+		<widget source="session.RecordState" render="Pixmap" position="1575,838" size="45,45" pixmap="buttons/rec_on.png" alphatest="blend" zPosition="2">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<!-- Servicename -->
+		<ePixmap position="60,912" size="220,132" pixmap="picon_default.png" zPosition="1" alphatest="blend" />
+		<widget name="Cover" position="10,750" size="270,300" zPosition="1" alphatest="on" backgroundColor="transparent" foregroundColor="transparent" />
+		<widget source="session.CurrentService" render="Label" position="316,840" size="1324,40" font="Regular;34" valign="top" noWrap="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- movie length -->
+		<eLabel text="Time :" position="1650,860" size="120,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget source="session.CurrentService" render="Label" position="1720,860" size="150,40" font="Regular;32" halign="right" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<!-- Elapsed time -->
+		<widget source="session.CurrentService" render="Label" position="300,935" size="140,50" font="Regular;42" halign="right" backgroundColor="header" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<!-- Progressbar (movie position)-->
+		<eLabel position="460,960" size="960,2" backgroundColor="bluette" zPosition="1" />
+		<widget source="session.CurrentService" render="Progress" position="460,958" size="960,6" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="360,597" size="620,5" transparent="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<!-- Remaining time -->
+		<widget source="session.CurrentService" render="Label" position="1450,935" size="250,50" font="Regular;42" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate</convert>
+		</widget>
+		<!-- Audio icon (is there multichannel audio?) -->
+		<ePixmap pixmap="icons/ico_dolby_off.png" position="320,1000" size="200,50" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_dolby_on.png" position="320,1000" size="150,50" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- HDTV icon -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_hd_off.png" position="500,1000" size="150,50" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">0,720</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_hd_on.png" position="500,1000" size="150,50" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">721,1980</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Videoformat icon (16:9?) -->
+		<ePixmap pixmap="icons/ico_format_off.png" position="680,1000" size="150,50" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_format_on.png" position="680,1000" size="150,50" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Panel Video Resolution  -->
+		<widget source="session.CurrentService" render="Label" position="720,1010" size="200,50" font="Regular;40" halign="right" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" position="930,1010" size="25,50" font="Regular;40" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3" />
+		<widget source="session.CurrentService" render="Label" position="960,1010" size="200,50" font="Regular;40" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+	</screen>
 <screen name="InternetRadioScreen" position="0,0" size="1920,1080" title="Opendroid_InternetRadio" backgroundColor="transparent" flags="wfNoBorder">
 		<!-- Panel SatType -->
 		<ePixmap pixmap="oDreamy-FHD/adio.png" position="50,140" size="1200,800" zPosition="-2" transparent="1" alphatest="blend" />

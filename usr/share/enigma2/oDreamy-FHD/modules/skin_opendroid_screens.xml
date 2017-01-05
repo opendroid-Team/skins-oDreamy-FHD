@@ -182,6 +182,16 @@
 		<!-- eLabel name="DEBUG" text="PE002" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
+		<screen name="Startcam" position="fill" title="Cam Start" backgroundColor="#FF000000" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="connect" position="70,180" size="820,680" zPosition="2" pixmaps="/usr/share/enigma2/oDreamy-FHD/opendroid/sc1.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc2.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc3.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc4.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc5.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc6.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc7.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc8.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc9.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc10.png,/usr/share/enigma2/oDreamy-FHD/opendroid/sc11.png"  transparent="1" alphatest="blend"/>
+		<widget name="lab1" position="70,760" halign="center" size="820,80" font="Regular;30" valign="top" transparent="1" zPosition="1" />
+		<!-- eLabel name="DEBUG" text="VX19" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
 
 	<!--   SoftCam CCCam Info FHD -->
 	<screen name="CCcamInfoMain" position="fill" title="Softcam Info" backgroundColor="transparent" flags="wfNoBorder">
@@ -786,7 +796,7 @@
 	</screen>
 
 	<!--   EmuManager FHD -->
-	<screen name="EmuManagerStarting" position="center,150" size="700,260" title="StartCam" >
+	<screen name="startcam" position="center,150" size="700,260" title="StartCam" >
 	        <widget name="text" position="10,10" size="680,100" halign="center" valign="center" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 	        <widget name="starting" position="center,110" size="128,128" zPosition="1" pixmaps="oDreamy-FHD/opendroid/sc1.png,oDreamy-FHD/opendroid/sc2.png,oDreamy-FHD/opendroid/sc3.png,oDreamy-FHD/opendroid/sc4.png
 	        	,oDreamy-FHD/opendroid/sc5.png,oDreamy-FHD/opendroid/sc6.png,oDreamy-FHD/opendroid/sc7.png,oDreamy-FHD/opendroid/sc8.png,oDreamy-FHD/opendroid/sc9.png,oDreamy-FHD/opendroid/sc10.png,oDreamy-FHD/opendroid/sc11.png" alphatest="blend" />
