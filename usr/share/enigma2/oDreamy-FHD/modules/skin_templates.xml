@@ -295,6 +295,31 @@
 		<eLabel position="1260,125" size="610,2"   backgroundColor="bluette" zPosition="-2" />
 		<eLabel position="1260,140" size="610,802" backgroundColor="#201b3c85" zPosition="-2" />
 	</screen>
+	
+		<!-- P800 Extensions FHD -->
+	<screen name="p8001_Ext" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+	</screen>
+
+	<!-- P800 Extensions FHD -->
+	<screen name="p800_Ext_Bi" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,140" size="610,802" backgroundColor="#10000000" zPosition="-2" />
+		<eLabel position="1260,510" size="610,432" backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1260,510" size="610,10"  backgroundColor="#FF000000" zPosition="-1" />
+	</screen>
+
+	<!-- P800 Extensions FHD -->
+	<screen name="p800_Ext_BiN" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,140" size="610,802" backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1260,510" size="610,432" backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,510" size="610,10"  backgroundColor="#FF000000" zPosition="-1" />
+	</screen>
+
 
 	<!-- P800 Logo FHD -->
 	<screen name="p800_Logo" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
