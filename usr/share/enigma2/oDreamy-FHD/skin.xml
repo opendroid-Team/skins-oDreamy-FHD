@@ -216,7 +216,7 @@
 	</screen>
 
 	<!-- Restart shutdown FHD -->
-        <screen name="QuitMainloopScreen" position="fill" backgroundColor="#201b3c85" flags="wfNoBorder">
+        <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap position="620,400" size="600,132" pixmap="oDreamy-FHD/restart-e2-full.png" zPosition="1" alphatest="blend" />
 		<widget name="text" position="250,600" size="1370,100" zPosition="2" font="Regular;45" halign="center" valign="center" foregroundColor="green" backgroundColor="#201b3c85" shadowColor="#201b3c85" shadowOffset="1,1" transparent="1" />
 		<!--eLabel name="DEBUG" text="S001" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
