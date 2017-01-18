@@ -215,10 +215,13 @@
 		<!-- eLabel name="DEBUG" text="S000" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
-	<!-- Restart shutdown FHD -->
+	<!-- Reboot FHD -->
+	<screen name="TryQuitMainloop" position="fill" flags="wfNoBorder" />
+	
+	<!-- Restart Panel FHD -->
         <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap position="620,400" size="600,132" pixmap="oDreamy-FHD/restart-e2-full.png" zPosition="1" alphatest="blend" />
-		<widget name="text" position="250,600" size="1370,100" zPosition="2" font="Regular;45" halign="center" valign="center" foregroundColor="green" backgroundColor="#201b3c85" shadowColor="#201b3c85" shadowOffset="1,1" transparent="1" />
+		<eLabel  text="Restarting System Opendroid Please Wait..." position="center,600" size="1920,70" font="Regular;45" halign="center" backgroundColor="#10000000" foregroundColor="ltbluette" transparent="1" zPosition="1"/>
 		<!--eLabel name="DEBUG" text="S001" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
         </screen>
 
