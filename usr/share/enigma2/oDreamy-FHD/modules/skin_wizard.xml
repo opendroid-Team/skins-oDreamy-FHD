@@ -60,11 +60,11 @@
 		<widget source="languages" render="Listbox" position="70,220" size="820,720" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (100, 50), size = (700, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-					MultiContentEntryPixmap(pos = (5, 50), size = (80, 56), png = 2), # index 2 is the pixmap
+					MultiContentEntryText(pos = (100, 5), size = (700, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+					MultiContentEntryPixmap(pos = (5, 5), size = (80, 56), png = 2), # index 2 is the pixmap
 					],
 					"fonts": [gFont("Regular", 32)],
-					"itemHeight": 56
+					"itemHeight": 70
 				}
 			</convert>
 		</widget>
