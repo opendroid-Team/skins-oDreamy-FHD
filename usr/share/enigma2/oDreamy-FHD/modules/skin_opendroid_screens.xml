@@ -440,20 +440,18 @@
 		<panel name="p800_DateMid" />
 		<panel name="nR"/>
 		<widget name="list" position="70,180" size="820,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
-		<eLabel position="70,240" size="820,1" backgroundColor="#10303030" zPosition="2"/>
 		<widget name="remove" position="70,270" size="820,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="oDreamy-FHD/menu/utility.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<!-- eLabel name="DEBUG" text="PE018" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!--  Manual Addons Install FHD -->
-	<screen name="Installer_Addon" position="fill" title="Manual Addons Installation" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="Installer_Addons" position="fill" title="Manual Addons Installation" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="nR"/>
 		<widget name="infotext" position="70,180" size="820,40" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />      
-		<eLabel position="70,240" size="820,1" backgroundColor="#10303030" zPosition="2"/>
 		<widget name="info" position="70,270" size="820,720" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="oDreamy-FHD/menu/utility.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<!-- eLabel name="DEBUG" text="PE019" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
