@@ -868,7 +868,7 @@
     
     <!-- EMU Info ... -->
     <widget source="session.CurrentService" render="Label" position="712,996" size="500,23" halign="center" font="Regular; 25" zPosition="4" backgroundColor="background" transparent="1" noWrap="1">
-      <convert type="OPD_CaidBar">#00009999, #0003a902, #00af2bf9</convert>
+      <convert type="ODExtraInfo">NetInfo</convert>
     </widget>
     <!-- EMU Info -->
     <widget source="session.CurrentService" render="Label" position="4,1020" size="1920,30" backgroundColor="background" font="Regular; 24" foregroundColor="yellow" transparent="1" zPosition="21" halign="center" text="Emu Info ">
