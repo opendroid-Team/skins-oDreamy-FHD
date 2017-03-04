@@ -1589,12 +1589,12 @@
 		<widget name="menu" position="70,180" size="840,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S128" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
-	
 	<!-- Harddisk selection FHD -->
 	<screen name="HarddiskSelection" title="HardDisk Selection" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="hddlist" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/folders.png" alphatest="blend"/>
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
@@ -1603,12 +1603,17 @@
 
 	<!-- Harddisk setup FHD -->
 	<screen name="HarddiskSetup" title="Harddisk Setup" position="fill" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p700_Template"/>
-		<panel name="p700_Logo"/>
-		<panel name="sR"/>
-		<widget name="model"    position="70,180" size="820,30" font="Regular;32" backgroundColor="header" foregroundColor="#73c6ff" transparent="1" zPosition="1" />
-		<widget name="capacity" position="70,240" size="820,25" font="Regular;30" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="bus"      position="70,290" size="820,25" font="Regular;30" backgroundColor="header" transparent="1" zPosition="1" />
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="model"    position="70,180" size="820,40" font="Regular;32" backgroundColor="header" foregroundColor="#73c6ff" transparent="1" zPosition="1" />
+		<widget name="capacity" position="70,240" size="820,40" font="Regular;32" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="bus"      position="70,290" size="820,40" font="Regular;32" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" />
+		<widget name="initializetext" position="120,988" size="300,28" font="Regular;30" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="initialize" position="120,988" size="300,28" font="Regular;30" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/ico_storage.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="S130" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3436,8 +3441,8 @@
 		<panel name="p800_DateMid" />
 		<panel name="sRG"/>
 		<ePixmap pixmap="icons/scan-s.png" position="70,170" size="64,64" zPosition="2" transparent="1" alphatest="blend"/>
-		<widget source="statusbar" render="Label" position="150,180" size="740,60" font="Regular;40" halign="left" valign="center" backgroundColor="header" zPosition="10" transparent="1"/>
-		<widget source="tunerstatusbar" render="Label" position="70,250" size="820,30" font="Regular;32" halign="left" valign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget source="statusbar" render="Label" position="150,180" size="740,120" font="Regular;35" halign="left" valign="center" backgroundColor="header" zPosition="10" transparent="1"/>
+		<widget source="tunerstatusbar" render="Label" position="70,300" size="820,60" font="Regular;32" halign="left" valign="center" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="config" position="70,300" size="820,630" itemHeight="45" font="Regular;32" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header"/>
 		<ePixmap position="960,645" size="300,300" pixmap="menu/scansat.png" alphatest="blend" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S254" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
