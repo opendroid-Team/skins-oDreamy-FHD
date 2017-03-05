@@ -670,28 +670,20 @@
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
 		<!-- Sat Name Info -->
-		<widget source="session.CurrentService" render="Label" position="1620,112" size="200,40" font="Regular;32" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2" >
-			<convert type="PliExtraInfo">TransponderName</convert>
-		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1710,112" size="160,40" font="Regular;32" halign="right" foregroundColor="yellow" backgroundColor="header" transparent="1" >
-			<convert type="FrontendInfo">SNR</convert>
-		</widget>
-		<!-- *** Signal Quality *** 
-		<eLabel text="SNR:" position="1480,112" size="90,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
-		<eLabel text="BER:" position="1700,112" size="90,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" noWrap="1" />
-		<widget source="session.FrontendStatus" render="Label" position="1780,112" size="130,40" font="Regular;32" foregroundColor="yellow" backgroundColor="header" transparent="1" noWrap="1">
-			<convert type="FrontendInfo">BER</convert>
-		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1180,248" size="80,22" font="Regular;19" halign="left" foregroundColor="yellow" backgroundColor="header" transparent="1">
-			<convert type="FrontendInfo">SNRdB</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1610,350"  size="460,40" font="Regular;32" halign="right" backgroundColor="header" foregroundColor="grey" transparent="1" zPosition="11" >
-			<convert type="ODExtraInfo">EcmInfo</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="630,639" size="350,30" halign="left" font="Regular;19" foregroundColor="white" transparent="1" backgroundColor="black" zPosition="12" >
-			<convert type="PliExtraInfo">CryptoBar</convert>
-		</widget>
-		-->
+		<widget source="session.CurrentService" render="Label" position="1615,112" size="140,40" font="Regular;32" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
+	    <convert type="PliExtraInfo">TransponderName</convert>
+	  </widget>
+            <widget backgroundColor="black" font="Regular; 24" halign="center" position="1665,965" render="Label" size="250,26" source="session.CurrentService" transparent="1">
+          <convert type="PliExtraInfo">ResolutionString</convert>
+      </widget>
+      <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/lan.png" position="32,44" size="120,120" zPosition="2" alphatest="blend">
+         <convert type="RouteInfo">Lan</convert>
+      <convert type="ConditionalShowHide" />
+      </widget>  
+      <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/wifi1.png" position="18,30" size="120,120" zPosition="2" alphatest="blend">
+         <convert type="RouteInfo">Wifi</convert>
+      <convert type="ConditionalShowHide" />
+  </widget>	
 		<!-- eLabel name="DEBUG" text="S103" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 

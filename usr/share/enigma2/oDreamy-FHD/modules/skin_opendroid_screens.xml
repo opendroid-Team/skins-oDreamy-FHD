@@ -16,8 +16,8 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_Ext" />
 		<panel name="p800_Date" />
-		<panel name="nRG"/>
-		<ePixmap pixmap="oDreamy-FHD/menu/ico_Opendroid.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap pixmap="oDreamy-FHD/menu/ico_opendroid.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<ePixmap position="895,180" size="15,720" pixmap="oDreamy-FHD/box/maxbargh.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget name="Mlist" position="70,180" size="840,720" itemHeight="72" scrollbarMode="showOnDemand" transparent="1" />
