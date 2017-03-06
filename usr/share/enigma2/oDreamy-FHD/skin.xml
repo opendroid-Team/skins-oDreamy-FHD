@@ -676,11 +676,18 @@
             <widget backgroundColor="black" font="Regular; 24" halign="center" position="1665,965" render="Label" size="250,26" source="session.CurrentService" transparent="1">
           <convert type="PliExtraInfo">ResolutionString</convert>
       </widget>
-      <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/lan.png" position="32,44" size="120,120" zPosition="2" alphatest="blend">
+      <!-- *** RouteInfo *** -->
+		<eLabel position="0,160"    size="300,120" backgroundColor="header"  zPosition="-1" />
+		<eLabel position="0,158"    size="0,5"   backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="0,160"    size="300,1"   backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="0,278" size="300,5"   backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="0,280"   size="300,1"   backgroundColor="bluette" zPosition="-1" />
+		
+      <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/lan.png" position="80,172" size="120,120" zPosition="2" alphatest="blend">
          <convert type="RouteInfo">Lan</convert>
       <convert type="ConditionalShowHide" />
       </widget>  
-      <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/wifi1.png" position="18,30" size="120,120" zPosition="2" alphatest="blend">
+      <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/wifi1.png" position="80,172" size="120,120" zPosition="2" alphatest="blend">
          <convert type="RouteInfo">Wifi</convert>
       <convert type="ConditionalShowHide" />
   </widget>	
