@@ -15,14 +15,16 @@
 	<screen name="MenuTemplate" >
 		<panel name="p700_Template" />
 		<panel name="p700_Date" />
+		<panel name="menu_sort" />
 		<!-- menu list -->
 		<ePixmap position="830,160" size="400,700" pixmap="oDreamy-FHD/menu/opendroidlogo.png"    alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
 		<widget source="menu" render="Listbox" position="45,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
 			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
-			selectionPixmap="oDreamy-FHD/box/slider.png" backgroundPixmap="oDreamy-FHD/box/sliderb.png" >
+			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
- 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (685, 65), flags = RT_HALIGN_LEFT, text = 0)],
+ 				{"template": [ MultiContentEntryText(pos = (100, 10), size = (685, 65), flags = RT_HALIGN_LEFT, text = 0),
+ 				MultiContentEntryPixmapAlphaBlend(pos=(20,2),size=(56,56),png=5,)],
  				"fonts": [gFont("Regular", 35)],
  				"itemHeight": 60
  				}
@@ -231,8 +233,75 @@
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
-		<ePixmap position="1275,975" size="90,60"   pixmap="oDreamy-FHD/icons/select.png"    alphatest="blend" zPosition="2" />
-		<ePixmap position="1535,970" size="80,80"   pixmap="oDreamy-FHD/icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+	
+	<!-- P1800 Template FHD -->
+	<screen name="p1800_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+	
+		<!-- P8000 Template FHD -->
+		
+	<screen name="p8000_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 800p Upper Panel -->
+		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140"   size="1820,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142"   size="1815,795" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136"   size="860,10"   backgroundColor="bluette"   zPosition="0"  />
+		<eLabel position="1520,934"  size="350,10"   backgroundColor="bluette" zPosition="0"  />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
@@ -326,6 +395,19 @@
 		<!-- Logo -->
 		<ePixmap position="930,160" size="400,700" pixmap="oDreamy-FHD/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
 		<eLabel  position="900,180" size="10,720"  backgroundColor="#301b3c85" zPosition="2" />
+	</screen>
+
+	<!-- P800 Logo FHD -->
+	<screen name="p800_Logo_Nobar" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Logo -->
+		<ePixmap position="930,160" size="400,700" pixmap="menu/opendroidlogo.png"  alphatest="blend" zPosition="1" />
+	</screen>
+
+	<!-- P800 LogoSeparator FHD -->
+	<screen name="p800_LogoSep" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel  position="1260,140" size="610,330" backgroundColor="#20000000" zPosition="2"/>
+		<ePixmap position="1440,175" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" zPosition="5" />
+		<eLabel  position="1260,470" size="620,10"  backgroundColor="#FF000000" zPosition="2"/>
 	</screen>
 
 	<!-- P800 DateMid FHD -->
@@ -536,6 +618,35 @@
 		<widget source="key_yellow" render="Label" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_blue" render="Label" position="400,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<!-- Button Templates Colors NoKeySource FHD -->
+
+	<screen name="skR">
+		<!-- Keys Buttons FHD -->
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="red" render="Label" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+	
+	<screen name="skRG">
+		<!-- Keys Buttons FHD -->
+		<panel name="skR" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="green" render="Label" position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="skRGY">
+		<!-- Keys Buttons FHD -->
+		<panel name="skRG" />
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="yellow" render="Label" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="skRGYB">
+		<!-- Keys Buttons FHD -->
+		<panel name="skRGY" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="blue" render="Label" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="MI">
