@@ -95,7 +95,6 @@
 	</screen>
 
 	<!-- ********** AutoTimer ********** P001 FHD -->
-
 	<!-- AutoTimer Wizard FHD -->
 	<screen name="AutoTimerWizard" title="AutoTimer Wizard" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template"/>
@@ -124,7 +123,6 @@
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" alphatest="blend" zPosition="3" />
 		<widget name="arrowup"    position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
 		<widget name="arrowup2"   position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png"   alphatest="blend" zPosition="3" />
-		<!-- eLabel name="DEBUG" text="P001" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer FHD -->
@@ -135,7 +133,6 @@
 		<panel name="sRGYB"/>
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="P001a" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Auto Timer FHD -->
@@ -146,7 +143,6 @@
 		<panel name="sRGYB"/>
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="P001b" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Auto Timer FHD -->
@@ -156,7 +152,6 @@
 		<panel name="sRGYB"/>
 		<panel name="M"/>
 		<widget name="entries" position="70,180" size="1170,720" font="Regular;32" itemHeight="80" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<!-- eLabel name="DEBUG" text="P001c" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Auto Timer FHD -->
@@ -167,8 +162,7 @@
 		<widget source="parent.Title" render="Label" position="70,180" size="820,40" font="Regular;32" backgroundColor="header" transparent="1"/>
 		<widget source="entry" render="Label" position="70,180" size="820,40" font="Regular;32" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
-		<!-- eLabel name="DEBUG" text="P001d" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- AutoTimer Help FHD -->
@@ -180,7 +174,6 @@
 		<widget render="Label" source="title" position="70,180" size="820,90" zPosition="5" valign="center" halign="center" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="detailtext" font="Regular;32" position="70,340" size="820,480" halign="center" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="P001e" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Import FHD -->
@@ -191,7 +184,6 @@
 		<panel name="sRG"/>
 		<widget name="list" position="70,180" size="1160,720" font="Regular;32" itemHeight="45" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="P001f" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- AutoTimer Setting FHD -->
@@ -390,7 +382,7 @@
 		<panel name="nRG"/>
 		<ePixmap position="1320,180" size="15,360" pixmap="box/maxbar.png" zPosition="4" alphatest="blend"/>
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<ePixmap position="960,640" size="256,256" pixmap="menu/missing.png" alphatest="blend"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/media_player.png" alphatest="blend"/>
 	</screen>
 
 	<!-- Picture Player Show FHD -->
@@ -407,7 +399,7 @@
 		<eLabel position="1260,588" size="610,70" backgroundColor="trbluette" zPosition="1"/>
 		<eLabel position="1260,660" size="610,280" backgroundColor="header" zPosition="1"/>
 		<widget name="thn" position="1260,660" size="610,280" alphatest="on" zPosition="2"/>
-		<ePixmap position="960,640" size="256,256" pixmap="menu/missing.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/media_player.png" alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- Picture Player Exif FHD -->
@@ -427,7 +419,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap position="960,640" size="300,300" pixmap="menu/missing.png" alphatest="blend"/>
+		<ePixmap position="960,640" size="300,300" pixmap="menu/media_player.png" alphatest="blend"/>
 	</screen>
 
 	<!-- Picture Player Full FHD -->
@@ -492,7 +484,7 @@
 		<widget name="newversion_label" position="70,240"   size="300,40" font="Regular;32" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="newversion"       position="400,240"  size="400,40" font="Regular;32" backgroundColor="header" transparent="1"/>
 		<widget source="status" render="Label" position="70,820" size="820,90" font="Regular;32" backgroundColor="header" transparent="1"/>
-		<ePixmap position="960,640" size="300,300" pixmap="menu/ico_italy.png" alphatest="blend"/>
+		<ePixmap position="960,640" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
 	</screen>
 
 	<!-- ********** FileBrowser ********** P007 FHD -->
@@ -1409,7 +1401,7 @@
 		<panel name="p800_DateMid"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="config" position="70,180" size="840,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- CCCam InfoMain FHD -->
@@ -1419,7 +1411,7 @@
 		<panel name="p800_DateMid"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="menu" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- CCCam ECM FHD -->
@@ -1429,7 +1421,7 @@
 		<panel name="p800_DateMid"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- CCCam InfoScreen FHD -->
@@ -1438,7 +1430,7 @@
 		<panel name="p800_DateMid"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="text" position="70,180" size="1170,720" font="Console;26" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- CCCam Shared Viewer FHD -->
@@ -1456,7 +1448,7 @@
 		<widget name="providers" position="1280,530" size="400,40" font="Regular;30" backgroundColor="header" transparent="1" />
 		<widget name="reshare"   position="1550,530" size="300,40" halign="right" font="Regular;30" backgroundColor="header" transparent="1" />
 		<widget name="title" position="1280,600" size="600,200" halign="center" font="Regular;30" transparent="1" />	
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
@@ -1471,7 +1463,7 @@
 		<ePixmap position="895,180" size="15,720" pixmap="box/maxbargh.png" zPosition="4" alphatest="blend"/>
 		<widget name="list" position="70,180" size="840,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<widget name="info" position="1280,480" size="600,400" font="Regular;30" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
@@ -1485,7 +1477,7 @@
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<widget name="info" position="1280,480" size="600,400" font="Regular;30" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
@@ -1499,7 +1491,7 @@
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<widget name="info" position="1280,480" size="600,400" font="Regular;30" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- CCCam Info ConfigMenu FHD -->
@@ -1507,9 +1499,10 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
+		<panel name="MI"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- CCCam InfoRemote FHD -->
@@ -1520,7 +1513,6 @@
 		<panel name="nRGYB"/> 
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<!-- eLabel name="DEBUG" text="P020j" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- CCCam InfoShare FHD -->
@@ -1531,7 +1523,6 @@
 		<panel name="nRGYB"/> 
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="list" position="70,180" size="840,720" font="Regular;32" itemHeight="102" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<!-- eLabel name="DEBUG" text="P020k" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- CCCam ConfigSwitch FHD -->
@@ -1541,7 +1532,6 @@
 		<panel name="nRGYB"/> 
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<!-- eLabel name="DEBUG" text="P020l" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- CCCam InfoMenu FHD -->
@@ -1552,7 +1542,6 @@
 		<panel name="nRGY"/> 
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<!-- eLabel name="DEBUG" text="P020m" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** OsCAM Info ********** P021 FHD -->
@@ -1563,8 +1552,7 @@
 		<panel name="p800_DateMid"/>
 		<widget name="mainmenu" position="70,180" size="820,720" font="Regular;30" itemHeight="40" noWrap="1" backgroundColor="header" transparent="1" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
-		<!-- eLabel name="DEBUG" text="P021" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<screen name="oscReadMe" position="full" title="Readme" backgroundColor="transparent" flags="wfNoBorder" >
@@ -1573,8 +1561,7 @@
 		<panel name="p800_DateMid"/>
 		<widget name="status" position="70,180" size="820,720" font="Regular;26" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
-		<!-- eLabel name="DEBUG" text="P021a" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<screen name="oscECMInfo" position="fill" title="ECM Info" backgroundColor="transparent" flags="wfNoBorder" >
@@ -1583,8 +1570,7 @@
 		<panel name="p800_DateMid"/>
 		<widget name="output" position="70,180" size="820,720" font="Regular;30" itemHeight="40" backgroundColor="header" transparent="1" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
-		<!-- eLabel name="DEBUG" text="P021b" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>'
 
 	<screen name="OscamInfoConfigScreen" position="fill" title="Oscam Info Setup" backgroundColor="transparent" flags="wfNoBorder">
@@ -1597,7 +1583,7 @@
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<widget name="status" render="Label" position="1280,480" size="600,200" font="Regular;30" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="5" />
-		<!-- eLabel name="DEBUG" text="P021c" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
 	<screen name="oscInfo" position="0,60" size="1920,1020" title="Client Info" backgroundColor="#10000000" >
@@ -1611,7 +1597,6 @@
 		<widget source="key_blue" render="Label" position="1100,15" size="210,34" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<eLabel position="10,60" size="1800,2" backgroundColor="bluette" zPosition="2"/>
 		<widget name="output" position="10,80" size="1800,920" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
-		<!-- eLabel name="DEBUG" text="P021d" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="oscReaderStats" position="fill" title="Client Info" backgroundColor="transparent" flags="wfNoBorder" >
@@ -1645,8 +1630,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
-		<!-- eLabel name="DEBUG" text="P021e" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<screen name="oscEntitlements" position="fill" title="Client Info" >
@@ -1680,8 +1664,7 @@
 			}
 			</convert>
 		</widget>
-		<ePixmap position="60,970"  size="900,90"  pixmap="oDreamy-FHD/icons/ico_opendroid.png"  alphatest="blend" zPosition="2" />
-		<!-- eLabel name="DEBUG" text="P021f" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+		<ePixmap position="60,970"  size="900,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- ********** User Interface ********** P022 FHD -->
@@ -1701,7 +1684,6 @@
         	<widget source="key_red"    render="Label" position="160,810"  zPosition="1" size="370,40" font="Regular;32" halign="center" valign="center" backgroundColor="header" transparent="1" />
         	<widget source="key_green"  render="Label" position="500,810"  zPosition="1" size="380,40" font="Regular;32" halign="center" valign="center" backgroundColor="header" transparent="1" />
         	<widget source="key_yellow" render="Label" position="970,810"  zPosition="1" size="380,40" font="Regular;32" halign="center" valign="center" backgroundColor="header" transparent="1" />
-		<!-- eLabel name="DEBUG" text="P022" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
         </screen>
 
 	<!-- ********** Usb Format ********** P023 FHD -->
@@ -1714,7 +1696,6 @@
 		<panel name="nRG"/> 
 		<widget name="lab1" position="70,180" font="Regular;32" size="820,800" halign="center" transparent="1" zPosition="1" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/deviceusb.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="P023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** XMLTV Import ********** P024 FHD -->
@@ -1728,7 +1709,6 @@
 		<ePixmap position="960,640" size="256,256" pixmap="menu/boot.png" alphatest="blend"/>
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<widget name="status" render="Label" position="70,660" size="820,200" font="Regular;32" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="5" />
-		<!-- eLabel name="DEBUG" text="P024" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="XMLTVImportSources" position="fill" backgroundColor="#FF000000" title="XMLTV Import" flags="wfNoBorder" >
@@ -1739,7 +1719,6 @@
 		<panel name="M"/> 
 		<ePixmap position="960,640" size="256,256" pixmap="menu/boot.png" alphatest="blend"/>
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<!-- eLabel name="DEBUG" text="P024a" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>'
 
 	<screen name="XMLTVImportLog" position="fill" backgroundColor="#FF000000" title="XMLTV Log" flags="wfNoBorder" >
@@ -1750,7 +1729,6 @@
 		<panel name="M"/> 
 		<ePixmap position="960,640" size="256,256" pixmap="menu/boot.png" alphatest="blend"/>
 		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<!-- eLabel name="DEBUG" text="P024b" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>'
 
 	<!-- ********** PictureCenterFS (WebRadioFS Addon) ********** P025 FHD -->
@@ -1759,16 +1737,14 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#001842" transparent="1" zPosition="3" />
-		<!-- eLabel name="DEBUG" text="P025" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<widget name="list" position="70,180" size="840,700" font="Regular;32" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#001842" transparent="1" zPosition="3" />
 	</screen>
 
 	<screen name ="PictureCenterFS_Filemenue" position="fill" title="PictureCenterFS" backgroundColor="#FF000000" flags="wfNoBorder" zPosition="2">
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-                <widget name="list" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#001842" transparent="1" zPosition="3" /> 
-		<!-- eLabel name="DEBUG" text="P025a" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+                <widget name="list" position="70,180" size="840,700" font="Regular;32" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#001842" transparent="1" zPosition="3" /> 
 	</screen>
 
 	<screen name="PictureCenterFS_Edit" position="fill" title="PictureCenterFS - edit" backgroundColor="#FF000000" flags="wfNoBorder" >
@@ -1778,11 +1754,28 @@
 		<panel name="nRGYB"/> 
 		<widget name="balken" position="70,600" size="820,40"  font="Regular;30" foregroundColor="#FFD700" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/media_player.png" alphatest="blend"/>
 		<widget name="pic_red"    pixmap="skin_default/buttons/button_red.png"    position="10,10"  size="0,0" backgroundColor="#FF000000" alphatest="blend" />
 		<widget name="pic_green"  pixmap="skin_default/buttons/button_green.png"  position="155,10" size="0,0" backgroundColor="#FF000000" alphatest="blend" />
 		<widget name="pic_yellow" pixmap="skin_default/buttons/button_yellow.png" position="300,10" size="0,0" backgroundColor="#FF000000" alphatest="blend" />
 		<widget name="pic_blue"   pixmap="skin_default/buttons/button_blue.png"   position="445,10" size="0,0" backgroundColor="#FF000000" alphatest="blend" />
-		<!-- eLabel name="DEBUG" text="P025b" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	
+	<screen name="PictureCenterFS_Setup2" position="fill" title="PictureCenterFS - edit" backgroundColor="#FF000000" flags="wfNoBorder" zPosition="2" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="p800_Ext_Bi"/>
+		<panel name="nRGYB"/> 
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1500,156" size="120,160" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
+		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="balken" position="1260,350" zPosition="1" size="610,200" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/media_player.png" alphatest="blend"/>
+		<widget name="pic_red"    pixmap="skin_default/buttons/button_red.png"    position="10,10"  size="0,0" backgroundColor="#000000" alphatest="blend" />
+		<widget name="pic_green"  pixmap="skin_default/buttons/button_green.png"  position="155,10" size="0,0" backgroundColor="#000000" alphatest="blend" />
+		<widget name="pic_yellow" pixmap="skin_default/buttons/button_yellow.png" position="300,10" size="0,0" backgroundColor="#000000" alphatest="blend" />
+		<widget name="pic_blue"   pixmap="skin_default/buttons/button_blue.png"   position="445,10" size="0,0" backgroundColor="#000000" alphatest="blend" />
 	</screen>
 
 	<screen name="PictureCenterFS_Edit2" position="fill" title="PictureCenterFS - edit" backgroundColor="#FF000000" flags="wfNoBorder" zPosition="2" >
@@ -1797,28 +1790,34 @@
 		<widget name="pic_green"  pixmap="skin_default/buttons/button_green.png"  position="155,10" size="0,0" backgroundColor="#000000" alphatest="blend" />
 		<widget name="pic_yellow" pixmap="skin_default/buttons/button_yellow.png" position="300,10" size="0,0" backgroundColor="#000000" alphatest="blend" />
 		<widget name="pic_blue"   pixmap="skin_default/buttons/button_blue.png"   position="445,10" size="0,0" backgroundColor="#000000" alphatest="blend" />
-		<!-- eLabel name="DEBUG" text="P025c" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 	
 	<screen name="PictureCenterFS" position="fill" title="PictureCenterFS" backgroundColor="#FF000000" flags="wfNoBorder" zPosition="2" >
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
-		<panel name="p800_DateMid"/>
+		<panel name="p800_Date"/>
 		<panel name="nRGYB"/> 
 		<panel name="MI"/> 
-  		<widget name="pc_list" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+  		<widget name="pc_list" position="70,190" size="840,700" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,140" size="610,455" backgroundColor="#10000000" zPosition="-2" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/media_player.png" alphatest="blend"/>
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1500,156" size="120,180" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
+                <widget name="button_ok" position="1280,350" size="60,30"  pixmap="buttons/key_ok.png" alphatest="blend" zPosition="1" />
+                <widget name="key_ok"    position="1360,350" size="300,40" font="Regular;28" foregroundColor="ltbluette" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" />
+                <widget name="button_0"  position="1280,400" size="35,35" pixmap="buttons/key_0.png" alphatest="blend" zPosition="1" />
+                <widget name="key_0"     position="1360,400" size="300,40" font="Regular;28" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
+                <widget name="button_help" position="1280,450" size="80,50"  pixmap="buttons/key_help.png" alphatest="blend" zPosition="1" />
+                <widget name="button_epg"  position="1360,450" size="80,40" pixmap="buttons/key_epg.png"   alphatest="blend" zPosition="1" />
+                <widget name="bgr2" position="1360,500" size="0,0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/pictures/bgr.png" transparent="0" alphatest="on" zPosition="0" /> 
+                <widget name="button_menu" position="1280,500" size="60,50" pixmap="buttons/key_menu.png" alphatest="blend" zPosition="1" />
 		<eLabel text="Preview" position="1260,608" size="610,70" font="Regular;40" halign="center" valign="center" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<eLabel position="1260,608" size="610,70"  backgroundColor="trbluette" zPosition="1"/>
 		<eLabel position="1260,680" size="610,267" backgroundColor="#20000000" zPosition="1"/>
 		<widget name="thumb" position="1370,705" size="390,220" alphatest="on" zPosition="10"/>
-                <widget name="button_ok" position="920,650" size="0,0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/key_ok.png"   alphatest="blend" zPosition="1" />
-                <widget name="key_ok"    position="960,647" size="300,40" font="Regular;28" foregroundColor="ltbluette" backgroundColor="header" transparent="1" noWrap="1" zPosition="1" />
-                <widget name="button_0"  position="920,600" size="40,30" pixmap="skin_default/buttons/key_0.png" alphatest="blend" zPosition="1" />
-                <widget name="key_0"     position="960,597" size="300,40" font="Regular;28" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
-                <widget name="button_help" position="920,700" size="0,0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/key_help.png" alphatest="blend" zPosition="1" />
-                <widget name="button_epg"  position="990,700" size="0,0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/key_epg.png"  alphatest="blend" zPosition="1" />
-                <widget name="button_menu" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/key_menu.png" position="750,474" size="0,0" zPosition="1" alphatest="blend" />
-                <widget name="bgr2" position="0,0" size="0,0" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/pictures/bgr.png" transparent="0" alphatest="on"/> 
                 <widget name="button_red"    pixmap="skin_default/buttons/key_red.png"    position="595,250" size="0,0" backgroundColor="#000000" alphatest="blend" />
                 <widget name="button_green"  pixmap="skin_default/buttons/key_green.png"  position="595,300" size="0,0" backgroundColor="#000000" alphatest="blend" />
                 <widget name="button_yellow" pixmap="skin_default/buttons/key_yellow.png" position="595,350" size="0,0" backgroundColor="#000000" alphatest="blend" />
@@ -1838,18 +1837,17 @@
 		<widget name="kro" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/k_r_o.png"  position="400,200"  size="40,40"  zPosition="4" alphatest="on" /> 
 		<widget name="kru" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/k_r_u.png"  position="400,400"  size="40,40"  zPosition="4" alphatest="on" />
 	        <widget name="txt_zeile" position="100,20" size="1000,35" zPosition="4" halign="left" valign="center" foregroundColor="#000000" transparent="1" noWrap="1"/> 
-		<!-- eLabel name="DEBUG" text="P025e" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
 	<!-- ********** WebRadio FS ********** P026 FHD --> 
 
 	<!-- Stream Radio -->
 	<screen name="WebradioFSScreen_12" position="fill" title="webradioFS" flags="wfNoBorder" zPosition="-1">
-		<ePixmap pixmap="oDreamy-FHD/menu/radiofs.png" position="fill" zPosition="-1" />
+		<ePixmap pixmap="menu/radiofs.png" position="fill" zPosition="-1" />
 		<eLabel text="MENU - INFO - HELP" position="230,48" size="400,50" font="Regular;34" foregroundColor="white" backgroundColor="#102e59" transparent="1" zPosition="3"/>
 		<eLabel text="WebRadioFS"  position="210,98" size="600,140" font="Regular;80" foregroundColor="ltbluette" backgroundColor="#102e59" transparent="1" zPosition="3"/>
 		<!--left site in Screen for Streams, Genres -->
-                <widget name="streamlist" position="60,245" size="850,580" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#001842" zPosition="2" /> 
+                <widget name="streamlist" position="60,245" size="850,580" itemheight="40" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#001842" zPosition="2" /> 
 		<!-- extended help -->
                 <widget name="help"       position="982,43" size="895,445" foregroundColor="#FFFFFF" backgroundColor="#001842" font="Regular;30" transparent="1" zPosition="2" /> 
 		<!-- info -->
@@ -1875,16 +1873,14 @@
                 <widget name="buttons_abdeck" position="990,960" size="890,80" font="Regular;30" valign="center" halign="center" foregroundColor="green" backgroundColor="#001e58" transparent="1" zPosition="2" />           
                 <widget name="key_red2"   position="115,944" size="200,40" font="Regular;30" foregroundColor="#FFFFFF" backgroundColor="bluette" noWrap="1" transparent="1" zPosition="3" />
                 <widget name="key_green2" position="315,994" size="260,40" font="Regular;30" foregroundColor="#FFFFFF" backgroundColor="bluette" noWrap="1" transparent="1" zPosition="3" />
-
 		<widget source="global.CurrentTime" render="Label" position="980,785" size="700,200" font="Regular;120" halign="right" valign="center" foregroundColor="bluette" backgroundColor="#001842" transparent="1" zPosition="5">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
-		<!-- eLabel name="DEBUG" text="P026" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Stream Music Player -->
 	<screen name="wbrFS_r_site" position="982,43" size="895,445" flags="wfNoBorder" zPosition="-1" >
-		<ePixmap pixmap="oDreamy-FHD/menu/inforadio.png" position="fill" zPosition="-1" />
+		<ePixmap pixmap="menu/inforadio.png" position="fill" zPosition="-1" />
                 <widget name="picture"    position="750,5"  size="140,140" alphatest="blend" />
                 <widget name="streamlogo" position="0,15"   size="320,130" alphatest="blend" />
 		<eLabel position="10,150" size="880,2" backgroundColor="bluette" />
@@ -1907,23 +1903,21 @@
                 <widget name="subdirs"    position="420,410" size="50,30"  alphatest="blend" />
                 <eLabel text="AutoPlay :" position="560,410" size="150,40" font="Regular;32" backgroundColor="#102e59" foregroundColor="white" transparent="1" zPosition="1"/>
                 <widget name="auto"       position="720,410" size="50,30"  alphatest="blend" />
-		<!-- eLabel name="DEBUG" text="P026a" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Display Setup -->
-	<screen name="setDisplay" position="fill" title="WebRadio Display-Settings" backgroundColor="#FF000000" flags="wfNoBorder" >
+	<screen name="webradioFSsetDisplay" position="fill" title="WebRadio Display-Settings" backgroundColor="#FF000000" flags="wfNoBorder" zPosition="2">
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
 		<panel name="nRG"/> 
 		<widget name="titel"  position="120,40" size="0,0" font="Regular;32" valign="center" halign="center" foregroundColor="white" backgroundColor="bluette" transparent="1" />
 		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
-		<ePixmap position="960,640" size="256,256" pixmap="/usr/share/enigma2/oDreamy-FHD/menu/web_radio.png" alphatest="blend" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
 		<widget name="label_red"   position="130,988" size="200,30" font="Regular;32" backgroundColor="header" transparent="1" />
 		<widget name="label_green" position="420,988" size="200,40" font="Regular;32" backgroundColor="header" transparent="1" />
-		<widget name="pic_red"     pixmap="usr/share/enigma2/oDreamy-FHD/buttons/redpanel.png" position="0,0" size="0,0" alphatest="blend" />
-		<widget name="pic_green"   pixmap="usr/share/enigma2/oDreamy-FHD/buttons/greenpanel.png" position="0,0" size="0,0" alphatest="blend" />
-		<!-- eLabel name="DEBUG" text="P026b" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<widget name="pic_red"     pixmap="usr/share/enigma2/buttons/redpanel.png" position="0,0" size="0,0" alphatest="blend" />
+		<widget name="pic_green"   pixmap="usr/share/enigma2/buttons/greenpanel.png" position="0,0" size="0,0" alphatest="blend" />
 	</screen>
 
 	<!-- Menu RemoteControl WebradioFSSetup_12 -->
@@ -1934,12 +1928,11 @@
 		<panel name="nRGYB"/> 
 		<!-- Config -->
                 <widget name="config" position="70,180" size="840,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#FFFFFF" backgroundColor="bluette" transparent="1" zPosition="3" />
-		<ePixmap position="960,640" size="256,256" pixmap="/usr/share/enigma2/oDreamy-FHD/menu/web_radio.png" alphatest="blend" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
 		<!--top on left site in stream-list-Screen  -->
                 <widget source="playtext" render="Label" position="60,870" size="850,400" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="bluette" transparent="1" zPosition="2" />
                 <widget name="rec_txt" position="220,60" size="0,0" font="Regular;30" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" /> 
                 <widget name="green_pic"  position="65,1000"  size="0,0"  pixmap="skin_default/buttons/key_green.png" alphatest="blend" zPosition="1" />
-		<!-- eLabel name="DEBUG" text="P026c" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Menu Record Setting -->
@@ -1947,17 +1940,19 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_Date"/>
-		<panel name="p800_Ext"/>
-		<panel name="nRGYB"/> 
+		<panel name="p800_Ext_Bi"/>
+		<panel name="nRG"/> 
 		<!-- Config -->
 	        <widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#FFFFFF" backgroundColor="bluette" transparent="1" zPosition="3" />
-		<ePixmap position="960,640" size="256,256" pixmap="/usr/share/enigma2/oDreamy-FHD/menu/web_radio.png" alphatest="blend" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
 		<!--top on left site in stream-list-Screen  -->
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
+		<eLabel position="1255,480" size="675,10" backgroundColor="#FF000000" zPosition="1"/>
                 <widget source="playtext" render="Label" position="1280,480" size="560,200" font="Regular;30" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="5" />
 	        <widget name="rec_txt" position="220,60" size="0,0" font="Regular;30" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" /> 
 	        <widget name="green_pic"  position="65,1000"  size="0,0"  pixmap="skin_default/buttons/key_green.png" alphatest="blend" zPosition="1" />
-		<!-- eLabel name="DEBUG" text="P026d" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- Menu Main -->
@@ -1965,14 +1960,16 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<panel name="p800_Ext"/>
-		<panel name="nRGYB"/> 
+		<panel name="p800_Ext_Bi"/>
 		<panel name="MI"/> 
 		<!-- List -->
                 <widget name="streamlist" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#001842" transparent="1" zPosition="3" /> 
+		<ePixmap position="60,970"  size="700,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
+		<eLabel position="1255,480" size="675,10" backgroundColor="#FF000000" zPosition="1"/>
                 <widget source="playtext" render="Label" position="1280,480" size="560,200" font="Regular;30" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="5" />
-		<ePixmap position="960,640" size="256,256" pixmap="/usr/share/enigma2/oDreamy-FHD/menu/web_radio.png" alphatest="blend" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
 		<!-- PANEL MENU FAKE-->
                 <widget name="buttons_abdeck" position="990,960" size="890,80" font="Regular;30" valign="center" halign="center" foregroundColor="green" backgroundColor="#001e58" transparent="1" zPosition="2" />           
                 <widget name="key_red2"   position="115,944" size="200,40" font="Regular;30" foregroundColor="#FFFFFF" backgroundColor="bluette" noWrap="1" transparent="1" zPosition="3" />
@@ -1984,7 +1981,7 @@
                 <widget name="rec_txt"    position="1240,30"  size="640,80" font="Regular;40" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="4" />
                 <widget name="rec_txt2"   position="1240,30"  size="640,80" font="Regular;40" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="5" />
                 <widget name="green_pic"  position="65,1000"  size="0,0"  pixmap="skin_default/buttons/key_green.png" alphatest="blend" />
-		<!-- eLabel name="DEBUG" text="P026e" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- Genre Setup -->
@@ -1992,7 +1989,7 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<panel name="p800_Ext"/>
+		<panel name="p800_Ext_Bi"/>
 		<panel name="nRG"/> 
 		<panel name="MI"/> 
 		<!-- List -->
@@ -2004,20 +2001,20 @@
 		<!--pics: extended help-->
                 <widget name="help"       position="60,250" size="850,560" foregroundColor="#FFFFFF" backgroundColor="#001842" font="Regular;30" transparent="1" zPosition="3" /> 
 		<!-- PANEL MENU -->
-		<ePixmap position="960,640" size="256,256" pixmap="/usr/share/enigma2/oDreamy-FHD/menu/web_radio.png" alphatest="blend" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
                 <widget name="buttons_abdeck" position="990,960" size="890,80" font="Regular;30" valign="center" halign="center" foregroundColor="green" backgroundColor="#001e58" transparent="1" zPosition="2" />           
                 <widget name="rec_txt"    position="115,987" size="200,40" font="Regular;32" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
                 <widget name="key_red2"   position="115,987" size="200,40" font="Regular;30" foregroundColor="#FFFFFF" backgroundColor="bluette" noWrap="1" transparent="1" zPosition="3" />
                 <widget name="key_green2" position="400,987" size="400,40" font="Regular;30" foregroundColor="#FFFFFF" backgroundColor="bluette" noWrap="1" transparent="1" zPosition="3" />
                 <widget name="green_pic"  position="65,1000" size="0,0"  pixmap="skin_default/buttons/key_green.png" alphatest="blend" />
-		<!-- eLabel name="DEBUG" text="P026f" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_webradio.png" alphatest="blend"/>
 	</screen>
 
 	<!-- Stream Edit -->
 	<screen name="Fav_edit_12" position="fill" title="webradioFS Stream Edit" backgroundColor="#FF000000" flags="wfNoBorder" zPosition="1" >
 		<panel name="p800_Template"/>
 		<panel name="p800_Date"/>
-		<panel name="p800_Ext"/>
+		<panel name="p800_Ext_Bi"/>
 		<panel name="nRGYB"/> 
 		<!--left site in Screen for Streams, Genres...-->
                 <widget name="config" position="70,180" size="1160,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#FFFFFF" backgroundColor="bluette" transparent="1" zPosition="3" />
@@ -2026,7 +2023,7 @@
                 <widget name="rec_txt" position="220,60" size="0,0" font="Regular;30" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" /> 
                 <widget name="green_pic"  position="65,1000"  size="0,0"  pixmap="skin_default/buttons/key_green.png" alphatest="blend" zPosition="1" />
                 <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="1680,960" size="240,60" alphatest="blend" transparent="1" zPosition="5" />
-		<!--eLabel name="DEBUG" text="P026g" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- ScreenSaver -->
@@ -2060,8 +2057,8 @@
 		<panel name="p800_DateMid"/>
                 <widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#FFFFFF" backgroundColor="bluette" transparent="1" zPosition="3" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
-		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
-		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<eLabel position="120,987" size="200,40" font="Regular;30" halign="left" text="Save"   transparent="1" zPosition="1" />
 		<eLabel position="410,987" size="200,40" font="Regular;30" halign="left" text="Cancel" transparent="1" zPosition="1" />
 		<!-- eLabel name="DEBUG" text="P027" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -2122,10 +2119,10 @@
 
 	<!-- Oscam Help -->
 	<screen name="helpScreen" position="center,center" size="500,370" backgroundColor="#000000" title="Help" >
-		<ePixmap position="10,10"  size="40,40" pixmap="oDreamy-FHD/buttons/redpanel.png"    alphatest="blend" zPosition="3" />
-		<ePixmap position="10,60"  size="40,40" pixmap="oDreamy-FHD/buttons/yellowpanel.png" alphatest="blend" zPosition="3" />
-		<ePixmap position="10,110" size="40,40" pixmap="oDreamy-FHD/buttons/greenpanel.png"  alphatest="blend" zPosition="3" />
-		<ePixmap position="10,160" size="40,40" pixmap="oDreamy-FHD/buttons/bluepanel.png"   alphatest="blend" zPosition="3" />
+		<ePixmap position="10,10"  size="40,40" pixmap="buttons/redpanel.png"    alphatest="blend" zPosition="3" />
+		<ePixmap position="10,60"  size="40,40" pixmap="buttons/yellowpanel.png" alphatest="blend" zPosition="3" />
+		<ePixmap position="10,110" size="40,40" pixmap="buttons/greenpanel.png"  alphatest="blend" zPosition="3" />
+		<ePixmap position="10,160" size="40,40" pixmap="buttons/bluepanel.png"   alphatest="blend" zPosition="3" />
 		<widget name="label"  position="45,10"  size="300,40" font="Regular;30" transparent="1" zPosition="3" />
 		<widget name="label2" position="45,60"  size="300,40" font="Regular;30" transparent="1" zPosition="3" />
 		<widget name="label3" position="45,110" size="300,40" font="Regular;30" transparent="1" zPosition="3" />
@@ -2238,6 +2235,46 @@
 		<widget name="ButtonYellow" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/button_yellow.png" position="0,0" zPosition="1" size="0,0" transparent="1" alphatest="on" />
 		<!-- eLabel name="DEBUG" text="P030c" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
+		<!-- ********** UserSkin ********** P033 FHD -->
+
+  	<screen name="UserSkin_Config" position="fill" title="UserSkin Setup" backgroundColor="#FF000000" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="nRGYB"/> 
+                <widget name="config" position="70,180" size="1160,620" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<eLabel text="Preview" position="1260,600" size="610,70" font="Regular;40" halign="center" valign="center" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<eLabel position="1260,600" size="610,70"  backgroundColor="trbluette" zPosition="1"/>
+		<eLabel position="1260,680" size="610,267" backgroundColor="#20000000" zPosition="1"/>
+		<widget name="Picture" position="1370,705" size="390,220" alphatest="on" zPosition="10"/>
+  	</screen>
+	
+	<screen name="UserSkinScreens" position="fill" title="UserSkin Setup" backgroundColor="#FF000000" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="nRGYB"/> 
+		<panel name="sRG"/> 
+		<widget source="menu" render="Listbox" position="70,180" size="1160,620" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":
+					[
+						MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 3),
+						MultiContentEntryText(pos = (60, 2), size = (1100, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+						MultiContentEntryText(pos = (55, 42),size = (1100, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
+					],
+					"fonts": [gFont("Regular", 34),gFont("Regular", 28)],
+					"itemHeight": 80
+				}
+			</convert>
+		</widget>
+		<eLabel text="Preview" position="1260,600" size="610,70" font="Regular;40" halign="center" valign="center" backgroundColor="bluette" transparent="1" zPosition="2" />
+		<eLabel position="1260,600" size="610,70"  backgroundColor="trbluette" zPosition="1"/>
+		<eLabel position="1260,680" size="610,267" backgroundColor="#20000000" zPosition="1"/>
+		<widget name="Picture" position="1370,705" size="390,220" alphatest="on" zPosition="10"/>
+		<widget source="key_red" render="Label" position="70,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="#00ffffff" backgroundColor="#20b81c46" transparent="1" />
+		<widget source="key_green" render="Label" position="365,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="#00ffffff" backgroundColor="#20009f3c" transparent="1" />
+		<widget name="key_blue" position="950,635" zPosition="1" size="260,25" valign="center" halign="left" font="Regular;20" transparent="1" foregroundColor="#00ffffff" />
+	</screen>
+
 	
 	<!-- ********** WeatherList (class WeatherList) ********** P030 FHD -->
 
@@ -2509,58 +2546,48 @@
 
 	<!-- ********** Enhanced Movie Center ********** P036 FHD -->
 
- 	<screen name="EMCSelection" position="fill" title="Enhanced Movie Center" backgroundColor="#FF000000" flags="wfNoBorder"> 
-		<panel name="nRGYB" /> 
-		<eLabel position="1260,30" size="610,96" backgroundColor="#201b3c85" zPosition="-2" /> 
-		<eLabel position="1262,32" size="606,92" backgroundColor="#20000000" zPosition="-2" /> 
-		<eLabel position="1260,464" size="610,586" backgroundColor="#20000000" zPosition="-2" />
-                <eLabel position="1252,140" size="618,318" backgroundColor="#20000000" zPosition="-1" />
-		<eLabel position="1260,355" size="610,0" backgroundColor="#FF000000" zPosition="-1" /> 
-		<widget alphatest="on" name="Cover" position="1262,473" size="605,571" zPosition="4" /> 
-		<widget name="list" position="70,160" size="1780,280" itemHeight="40" CoolFont="Regular;30" CoolSelectFont="Regular;30" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#ffffff" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="bluette" foregroundColorSelected="#ffffff" backgroundColor="header" scrollbarMode="showNever" transparent="1" zPosition="1" />
+ 	<screen name="EMCSelection" position="fill" title="Enhanced Movie Center" backgroundColor="#FF000000" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Ext_BiN"/>
+		<panel name="p800_Date" />
+		<panel name="nRGYB"/>
+		<panel name="MI"/>
+		<widget name="list" position="70,180" size="1160,720" itemHeight="40" CoolFont="Regular;30" CoolSelectFont="Regular;30" CoolDateFont="Regular;30" 
+				CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" 
+				CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" 
+				DefaultColor="#FFFFFF" UnwatchedColor="#ffffff" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="bluette" 
+				foregroundColorSelected="#ffffff" backgroundColor="header" scrollbarMode="showNever" transparent="1" zPosition="1" />
 		<!-- Panel Info -->
-		<widget source="Service" render="Label" position="70,890" size="505,40" font="Regular; 32" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1"> 
-			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Date</convert>
-		</widget> 
-		<widget source="Service" render="Label" position="551,890" size="150,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
-			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Format:%H:%M </convert>
-		</widget> 
-		<widget source="Service" render="Label" position="664,890" size="150,40" font="Regular; 36" foregroundColor="yellow" backgroundColor="bluette" transparent="1"> 
-			<convert type="EMCServiceTime">EndTime</convert> <convert type="EMCClockToText">Format:- %H:%M </convert> 
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
+		<widget source="Service" render="Label" position="1420,170" size="615,40" font="Regular; 32" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
+			<convert type="EMCServiceTime">StartTime</convert>
+			<convert type="EMCClockToText">Date</convert>
 		</widget>
-		<widget source="Service" render="Label" position="715,890" size="250,40" font="Regular; 36" halign="right" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
-			<convert type="EMCMovieInfo">FileSize</convert> 
-		</widget>  
-		<widget source="Service" render="Label" position="997,890" size="300,40" font="Regular; 36" halign="left" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
-			<convert type="EMCServiceTime">Duration</convert> <convert type="EMCClockToText">Format:%Hh:%Mmin</convert> 
+		<widget source="Service" render="Label" position="1420,225" size="150,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
+			<convert type="EMCServiceTime">StartTime</convert>
+			<convert type="EMCClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget source="Service" render="Label" position="70,455" size="1160,400" font="Regular;30" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"> 
-			<convert type="EMCMovieInfo">ShortDescription</convert> 
-		</widget> 
-		<eLabel text="Menu" position="1120,35" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-		<eLabel text="Info" position="1120,80" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
-		<eLabel position="50,30" size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
-		<eLabel position="52,32" size="1196,91" backgroundColor="#20000000" zPosition="-1" />
-		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png" alphatest="blend" zPosition="2" />
-		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
-		<!-- Middle -->
-		<eLabel position="50,140" size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
-		<eLabel position="52,142" size="1200,795" backgroundColor="#20000000" zPosition="-1" />
-		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
-		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />
-		<!-- Footer -->
-		<eLabel position="50,955" size="1200,95" backgroundColor="#201b3c85" zPosition="-1" />
-		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />
-		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
-		<ePixmap position="1018,51" size="90,60" pixmap="icons/select.png" alphatest="blend" zPosition="2" />
-		<widget source="global.CurrentTime" render="Label" position="1265,32" size="264,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>	
-		<widget source="global.CurrentTime" render="Label" position="1550,30" size="300,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1">
-			<convert type="ClockToText">Format %A %d %B</convert>
+		<widget source="Service" render="Label" position="1530,225" size="150,40" font="Regular; 36" foregroundColor="yellow" backgroundColor="bluette" transparent="1">
+			<convert type="EMCServiceTime">EndTime</convert>
+			<convert type="EMCClockToText">Format:- %H:%M </convert>
 		</widget>
+		<widget source="Service" render="Label" position="1610,227" size="250,40" font="Regular; 32" halign="right" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1">
+			<convert type="EMCMovieInfo">FileSize</convert>
+		</widget>		
+		<widget source="Service" render="Label" position="1420,280" size="300,40" font="Regular; 36" halign="left" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1">
+			<convert type="EMCServiceTime">Duration</convert>
+			<convert type="EMCClockToText">Format:%Hh:%Mmin</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1265,530" size="615,250" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" >
+			<convert type="EMCMovieInfo">ShortDescription</convert>
+		</widget>
+		<!--
+		<widget source="session.CurrentService" render="Label" position="1262,838" size="600,77" font="Regular; 30" backgroundColor="black" transparent="1" halign="center" valign="center" zPosition="3" foregroundColor="red">
+			<convert type="DiskInfo">Format: %M %C (%F) hdd</convert>
+		</widget>
+		<widget name="Cover" position="1271,220" size="593,713" zPosition="0" transparent="1" alphatest="blend" />
+		-->
 	</screen>
 	
 	<screen name="MovieMenu" position="fill" title="EMC menu" backgroundColor="transparent" flags="wfNoBorder">
@@ -2568,7 +2595,7 @@
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid" />
 		<panel name="M"/>
-		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="700,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<widget source="menu" render="Listbox" position="70,180" size="840,720" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList" />
 		</widget>
@@ -2642,7 +2669,7 @@
 		<panel name="p800_Ext"/>
 		<panel name="MI"/>
 		<ePixmap position="1270,38" size="200,90"  pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="60,970"  size="700,90"  pixmap="icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<widget name="menulist" position="70,180"   size="1165,720" font="Regular;36" itemHeight="120" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on" />
 		<widget name="poster"   position="1265,145" size="440,640" alphatest="on" zPosition="2" />
 		<widget name="info"     position="1265,820" size="630,120" font="Regular; 30" halign="center" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="1" />
@@ -3233,18 +3260,28 @@
 		<eLabel text="Menu" position="1390,965" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<eLabel text="Info" position="1390,1002" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<!-- List Channel -->
-		<ePixmap position="1230,160" size="10,765" pixmap="box/maxbar.png" alphatest="blend" zPosition="2" />
-		<widget source="list" render="Listbox" position="64,160" size="1174,766" scrollbarMode="showAlways">
+		<widget name="config" position="70,180" size="1170,700" font="Regular;30" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/ico_ftp.png" alphatest="blend"/>
+	</screen>
+
+	<screen name="FTPQueueManager" position="fill" title="FTP Queue Manager" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_DateMid" />
+		<panel name="p800_Logo"/>
+		<panel name="sRGYB"/>
+		<!-- List Channel -->
+		<widget source="list" render="Listbox" position="70,180" size="820,720" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos=(35,1), size=(510,19), text = 0, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-			MultiContentEntryText(pos=(35,20), size=(510,18), text = 1, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-			MultiContentEntryPixmapAlphaTest(pos=(2,2), size=(32,32), png = 2),
-			],
-			"fonts": [gFont("Regular", 28)],
-			"itemHeight": 57 
-			}
+				{"template": [ MultiContentEntryText(pos=(35,1), size=(780,40), text = 0, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+					MultiContentEntryText(pos=(35,30), size=(780,40), text = 1, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+					MultiContentEntryPixmapAlphaTest(pos=(2,2), size=(32,32), png = 2),
+					],
+					"fonts": [gFont("Regular", 30)],
+					"itemHeight": 60 
+				}
 			</convert>
 		</widget>
+		<ePixmap  position="960,640" size="256,256" pixmap="menu/ico_ftp.png" alphatest="blend"/>
 	</screen>
 	<screen name="FTPServerManager" position="0,0" size="1920,1080" title="FTP Server Manager" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="50,140" size="1200,800" backgroundColor="rds_text_bg" zPosition="-1" />
