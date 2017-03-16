@@ -207,10 +207,6 @@
 		<color name="WindowTitleBackground"              color="#000000" />
 	</windowstyle>
 
-	<cascadingstylesheets name="slider_volume_horizontal" >
-		<css name="sliderForeground" value="oDreamy-FHD/skin_default/volbar.png" />
-	</cascadingstylesheets>
-	
 	<!-- RDS info FHD -->
 	<screen name="RdsInfoDisplay" position="fill" backgroundColor="transparent" flags="wfNoBorder" zPosition="-2">
 		<widget name="RassLogo"  position="70,600" size="100,50" pixmap="skin_default/icons/rass_logo.png"/>
@@ -246,10 +242,9 @@
 	</screen>
 
 	<!-- Volumebar FHD -->
-	<screen name="Volume" position="center,50" size="800,50" zPosition="10" title="Volume" flags="wfNoBorder"> 
-		<ePixmap position="0,0" size="800,50" pixmap="oDreamy-FHD/skin_default/volbg.png" zPosition="1" /> 
-		<widget name="Volume" position="44,22" size="650,6" css="slider_volume_horizontal" zPosition="2" /> 
-		<widget source="global.CurrentTime" render="VolumeText" backgroundColor="background" font="Regular; 28" halign="center" position="734,10" size="60,30" transparent="1" valign="center" zPosition="20" name="2" />
+	<screen name="Volume" position="center,50" size="800,50" zPosition="10" title="Volume" flags="wfNoBorder">
+		<ePixmap position="0,0" size="800,50" pixmap="oDreamy-FHD/skin_default/volbg.png" zPosition="1" />
+		<widget name="Volume" position="44,22" size="700,6" pixmap="oDreamy-FHD/skin_default/volbar.png" transparent="1" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3052,8 +3047,21 @@
 		<ePixmap position="960,640" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend"/>
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S214" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
-	</screen>	
-	
+	</screen>
+	<!--MultiBootStartup	-->
+	<screen name="MultiBootStartup" position="fill" title="MultiBoot STARTUP Selector" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="sRGY" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+                <widget source="config" render="Label" position="70,180" size="830,50" halign="left" transparent="1" font="Regular; 34" backgroundColor="#00000000" foregroundColor="blue" />
+                <widget source="options" render="Label" position="70,240" size="830,35" halign="left" transparent="1" font="Regular; 28" backgroundColor="#00000000" foregroundColor="grey" />
+                <widget name="description" position="70,300" size="830,26" transparent="1" font="Regular; 24" foregroundColor="#00ffffff" halign="left" backgroundColor="#00000000" valign="grey" />
+		<ePixmap pixmap="menu/startboot.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		
+	</screen>
 	<!-- Plugin Manager FHD -->
 	<screen name="PluginManager" title="Plugin manager" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template"/>
@@ -3154,7 +3162,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<panel name="nRGY"/>
+		<panel name="nRGYB"/>
 		<widget name="info-local"  position="70,180" zPosition="1" size="820,120" font="Regular;32" halign="left" valign="top" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
 		<widget name="info-flash"  position="70,360" zPosition="1" size="820,300" font="Regular;32" halign="left" valign="top" foregroundColor="white"     backgroundColor="header" transparent="1" />
 		<widget name="info-online" position="70,700" zPosition="1" size="820,100" font="Regular;32" halign="left" valign="top" foregroundColor="yellow"    backgroundColor="header" transparent="1" />
@@ -3167,7 +3175,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<panel name="nRGY"/>
+		<panel name="nRGYB"/>
 		<widget name="imageList" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="356,256" pixmap="menu/memory.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="S220" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
