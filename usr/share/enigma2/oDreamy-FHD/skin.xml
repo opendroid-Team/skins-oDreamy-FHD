@@ -591,7 +591,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="5,845" size="400,170" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" render="Picon" position="55,850" size="220,132" alphatest="blend" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- *** Event (now) *** -->
@@ -875,11 +875,14 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<!-- ***** BlueBox ***** --> 
-		<ePixmap pixmap="box/bluebox.png" position="50,350" size="370,190" alphatest="blend" zPosition="1" />
-		<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="40,360" size="400,170" alphatest="blend" zPosition="5" >
-			<convert type="ServiceName">Reference</convert>
-		</widget>
+			<ePixmap pixmap="box/bluebox.png" position="70,305" size="370,280" alphatest="blend" zPosition="1" />
+			<!-- Picon -->
+			<widget source="session.CurrentService" render="Picon" position="80,320" size="340,210" alphatest="blend" zPosition="5" >
+				<convert type="ServiceName">Reference</convert>
+			</widget>
+			<widget source="ServiceEvent" render="Picon" position="80,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
+				<convert type="DRRefString">ServicelistRef</convert>
+			</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
 		<eLabel text="Ch." position="60,580" size="80,60" font="Regular;50" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" zPosition="9"/>
@@ -1103,7 +1106,6 @@
 			foregroundColor="#505050" backgroundColor="header" transparent="1" zPosition="5">
     			<convert type="DRNextEvents">Event3,onlyStart</convert>
     		</widget>
-	
 		<!-- eLabel name="DEBUG" text="S105" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- Radio Stuff FHD -->
@@ -1525,6 +1527,12 @@
 		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S124" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
+
+	<!-- GraphicalEPG FHD -->
+	<screen name="GraphicalEPG" title="E.P Guide" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="GraphicalEPGPIG"/>
+	</screen>
+		
 	<!-- EPG Search FHD -->
 	<screen name="EPGSearch" title="EPG Search" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template"/>
@@ -3555,7 +3563,7 @@
 			</convert>
 		</widget>
 		<eLabel text="Exit"   position="120,955" size="210,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
-		<eLabel text="Config" position="400,955" size="210,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
+		<eLabel text="Select" position="400,955" size="210,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
 		<eLabel text="Info" position="950,955" size="250,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
 		<!-- eLabel name="DEBUG" text="S246" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -3750,10 +3758,10 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<panel name="sRG"/>
-		<ePixmap pixmap="icons/scan-s.png" position="70,170" size="100,100" zPosition="2" transparent="1" alphatest="blend"/>
-		<widget source="statusbar" render="Label" position="180,280" size="740,80" font="Regular;32" halign="left" valign="center" backgroundColor="header" zPosition="10" transparent="1"/>
-		<widget source="tunerstatusbar" render="Label" position="180,345" size="820,80" font="Regular;32" halign="left" valign="center" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="config" position="70,300" size="820,630" itemHeight="45" font="Regular;24" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header"/>
+		<ePixmap pixmap="icons/scan-s.png" position="70,170" size="64,64" zPosition="2" transparent="1" alphatest="blend"/>
+		<widget source="statusbar" render="Label" position="150,180" size="740,60" font="Regular;40" halign="left" valign="center" backgroundColor="header" zPosition="10" transparent="1"/>
+		<widget source="tunerstatusbar" render="Label" position="70,320" size="820,30" font="Regular;32" halign="left" valign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="config" position="70,300" size="820,630" itemHeight="45" font="Regular;32" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header"/>
 		<ePixmap position="960,645" size="300,300" pixmap="menu/scansat.png" alphatest="blend" zPosition="2" />
 		<!-- eLabel name="DEBUG" text="S254" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
