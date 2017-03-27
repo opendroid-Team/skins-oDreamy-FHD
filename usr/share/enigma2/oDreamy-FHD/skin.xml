@@ -875,14 +875,11 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<!-- ***** BlueBox ***** --> 
-			<ePixmap pixmap="box/bluebox.png" position="70,305" size="370,280" alphatest="blend" zPosition="1" />
-			<!-- Picon -->
-			<widget source="session.CurrentService" render="Picon" position="80,320" size="340,210" alphatest="blend" zPosition="5" >
-				<convert type="ServiceName">Reference</convert>
-			</widget>
-			<widget source="ServiceEvent" render="Picon" position="80,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
-				<convert type="DRRefString">ServicelistRef</convert>
-			</widget>
+		<ePixmap pixmap="box/bluebox.png" position="50,350" size="370,190" alphatest="blend" zPosition="1" />
+		<!-- Picon -->
+		<widget source="session.CurrentService" render="Picon" position="40,360" size="400,170" alphatest="blend" zPosition="5" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
 		<eLabel text="Ch." position="60,580" size="80,60" font="Regular;50" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" zPosition="9"/>
@@ -1028,13 +1025,14 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- List Channel --> 
-		<ePixmap position="1230,160" size="10,765" pixmap="oDreamy-FHD/box/maxbar.png" alphatest="blend" zPosition="2"/>
-		<widget name="list" position="70,160" size="1170,765" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
-			serviceItemHeight="45" serviceNumberFont="Regular;32" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" 
+		<ePixmap position="1230,165" size="10,750" pixmap="oDreamy-FHD/box/maxbar.png" alphatest="blend" zPosition="2"/>
+		<widget name="list" position="70,165" size="1170,750" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
+			serviceItemHeight="50" serviceNumberFont="Regular;32" serviceNameFont="Regular;30" serviceInfoFont="Regular;30" 
 			foregroundColor="#ffffff" foregroundColorSelected="#ffffff" backgroundColor="header" backgroundColorSelected="bluette"
 			colorServiceDescription="#49bbff" colorServiceDescriptionSelected="#a1daff" foregroundColorServiceNotAvail="#303030" 
-			colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="white" picServiceEventProgressbar="oDreamy-FHD/skin_default/progcl.png" />
-		<widget source="ServiceEvent" render="Label" position="1260,30" size="620,95" font="Regular;40" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
+			colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="white" picServiceEventProgressbar="oDreamy-FHD/skin_default/progcl.png" progressBarWidth="70" progressPercentWidth="80" itemsDistances="7" progressbarHeight="7"/>
+		<!-- Channel Name/Reference -->
+		<widget source="ServiceEvent" render="Label" position="1260,35" size="620,95" font="Regular;38" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- Event Title -->
@@ -1071,8 +1069,8 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
   		<!-- Next Event 1 -->
-        <widget source="ServiceEvent" render="DRRunningText" position="1270,827" size="590,40" font="Regular;30" 
-        options="movetype=running,
+    		<widget source="ServiceEvent" render="DRRunningText" position="1270,827" size="590,40" font="Regular;30" 
+    			options="movetype=running,
 			startpoint=0,
 			startdelay=4000,
 			oneshot=2000,step=1,
@@ -1171,7 +1169,7 @@
                 <eLabel text="Info" position="1370,1000" size="200,43" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<eLabel text="Exit" position="1435,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<!-- Provider Name -->
-		<widget source="session.CurrentService" render="Label" position="835,170" size="400,60" font="Regular;44" halign="right" foregroundColor="#404040" backgroundColor="header" transparent="1" zPosition="2" >
+		<widget source="session.CurrentService" render="Label" position="835,170" size="400,60" font="Regular;40" halign="right" foregroundColor="#808080" backgroundColor="header" transparent="1" zPosition="2" >
 			<convert type="ServiceName">Provider</convert>
 		</widget>
 		<widget name="channel"  position="70,170" size="740,60" font="Regular;46" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
@@ -3407,7 +3405,6 @@
 		<ePixmap position="960,640" size="256,256" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="S236" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
-	
 	<!-- Ipkg installer Software Update FHD -->
 	<screen name="UpdatePlugin" title="Plugin Update" position="center,center" size="800,230" backgroundColor="10000000">
 		<widget source="package" render="Label" position="10,30" size="785,40" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="#10101010" transparent="1"/>
