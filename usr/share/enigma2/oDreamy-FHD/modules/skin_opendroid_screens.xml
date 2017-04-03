@@ -466,7 +466,6 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_Date"/>
-		<widget name="list" position="70,180" size="685,40" font="Regular;28" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2"/>
 		<widget name="list" position="70,180" scrollbarMode="showOnDemand" itemHeight="40" size="820,540" backgroundColor="header" transparent="1" zPosition="2"/>
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<ePixmap position="955,640" size="300,300" pixmap="menu/utility.png" alphatest="blend"/>
@@ -474,13 +473,24 @@
 	</screen>
 	
 	<!-- Packet Manager FHD -->
-	<screen name="PanelIPKInstaller" title="Panel IPK Installer" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
-		<panel name="p800_Template" />
-		<panel name="p800_Logo" />
-		<panel name="nRG"/>
-		<ePixmap position="955,640" size="300,300" pixmap="menu/utility.png" alphatest="blend" zPosition="1" />
-		<widget name="list" position="70,180" size="820,520" font="Regular;38" itemHeight="45" scrollbarMode="showOnDemand" transparent="1">
-		      <convert type="StringList" />
+	<screen name="PanelIPKInstaller" position="fill" title="Manual Install Ipk Packages" backgroundColor="transparent" flags="wfNoBorder" >
+<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRG"/>
+		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="1225,180" size="10,720" zPosition="2" alphatest="blend"/>
+		<widget source="list" render="Listbox" position="45,180" size="1190,720" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"
+			selectionPixmap="box/slider72.png" backgroundPixmap="box/sliderb72.png" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60,1),  size = (1160,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (60,36), size = (1160,30), font=1, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryPixmapAlphaTest(pos = (5,1), size = (48,48), png = 4), # index 5 is the status pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (1100,0), png = 5), # index 6 is the div pixmap
+					],
+					"fonts": [gFont("Regular",35),gFont("Regular",28)],
+					"itemHeight": 72
+				}
+			</convert>
 		</widget>
 		<!--eLabel name="DEBUG" text="S199" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -497,12 +507,23 @@
 	
 	<!-- Packet Manager FHD -->
 	<screen name="AdvInstallIpk" title="Adv. Install Ipk" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
-		<panel name="p800_Template" />
-		<panel name="p800_Logo" />
-		<panel name="nRGY"/>
-		<ePixmap position="955,640" size="300,300" pixmap="menu/utility.png" alphatest="blend" zPosition="1" />
-		<widget name="list" position="70,180" size="820,520" font="Regular;38" itemHeight="45" scrollbarMode="showOnDemand" transparent="1">
-		      <convert type="StringList" />
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRGY"/>
+		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="1225,180" size="10,720" zPosition="2" alphatest="blend"/>
+		<widget source="menu" render="Listbox" position="45,180" size="1190,720" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"
+			selectionPixmap="box/slider72.png" backgroundPixmap="box/sliderb72.png" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60,1),  size = (1160,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (60,36), size = (1160,30), font=1, color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryPixmapAlphaTest(pos = (5,1), size = (48,48), png = 4), # index 5 is the status pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (1100,0), png = 5), # index 6 is the div pixmap
+					],
+					"fonts": [gFont("Regular",35),gFont("Regular",28)],
+					"itemHeight": 72
+				}
+			</convert>
 		</widget>
 		<!--eLabel name="DEBUG" text="S199" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -513,7 +534,7 @@
 		<panel name="p800_DateMid"/>
 		<panel name="sRG"/>
 		<ePixmap pixmap="oDreamy-FHD/box/maxbar.png" position="1225,180" size="10,720" zPosition="2" alphatest="blend"/>
-		<widget source="list" render="Listbox" position="45,180" size="1190,720" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"
+		<widget source="menu" render="Listbox" position="45,180" size="1190,720" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"
 			selectionPixmap="box/slider72.png" backgroundPixmap="box/sliderb72.png" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
