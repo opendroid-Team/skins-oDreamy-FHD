@@ -65,93 +65,93 @@
 		<widget name="ecminfo" position="180,580" size="730,400" font="Regular;30" zPosition="2" foregroundColor="#58bcff" backgroundColor="header" transparent="1"/>
 		<widget name="list" position="72,140" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget name="text" position="70,700" size="1170,160" halign="left" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
-		<eLabel text="\nS\nE\nR\nV\nI\nC\nE\n" position="1318,58" size="34,250" font="Regular; 26" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="red" foregroundColor="white" borderWidth="2" borderColor="black" />
-		<eLabel text="VPID" position="1352,58" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="green" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1421,58" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="green" borderWidth="2">
+		<eLabel text="\nS\nE\nR\nV\nI\nC\nE\n" position="1318,58" size="34,250" font="Regular; 28" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="red" foregroundColor="white" borderWidth="2" borderColor="black" />
+		<eLabel text="VPID" position="1352,58" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="green" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1421,58" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="green" borderWidth="2">
 		      <convert type="MyServiceInfoEX">: %vpid</convert>
 		</widget>
-		<eLabel text="APID" position="1352,91" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="blue" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1422,90" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="blue" borderWidth="2">
+		<eLabel text="APID" position="1352,91" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="blue" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1422,90" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="blue" borderWidth="2">
 			<convert type="MyServiceInfoEX">: %apid</convert>
 		</widget>
-		<eLabel text="PCR" position="1352,121" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="red" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1423,120" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="red" borderWidth="2">
+		<eLabel text="PCR" position="1352,121" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="red" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1423,120" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="red" borderWidth="2">
 			<convert type="MyServiceInfoEX">: %pcrpid</convert>
 		</widget>
-		<eLabel text="ONID" position="1352,150" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="orange" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1423,151" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="orange" borderWidth="2">
+		<eLabel text="ONID" position="1352,150" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="orange" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1423,151" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="orange" borderWidth="2">
 			<convert type="MyServiceInfoEX">: %onid</convert>
 		</widget>
-		<eLabel text="TSID" position="1352,181" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="secondFG" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1422,181" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" borderWidth="2">
+		<eLabel text="TSID" position="1352,181" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="secondFG" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1422,181" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" borderWidth="2">
 			<convert type="MyServiceInfoEX">: %tsid</convert>
 		</widget>
-		<eLabel text="SID" position="1352,213" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="white" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1422,214" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" borderWidth="2">
+		<eLabel text="SID" position="1352,213" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="white" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1422,214" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" borderWidth="2">
 			<convert type="MyServiceInfoEX">: %sid</convert>
 		</widget>
-		<eLabel text="PMT" position="1352,246" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="grey" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1422,248" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="grey" borderWidth="2">
+		<eLabel text="PMT" position="1352,246" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="grey" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1422,248" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="grey" borderWidth="2">
 			<convert type="MyServiceInfoEX">: %pmtpid</convert>
 		</widget>
-		<eLabel text="TXT" position="1352,279" size="70,30" font="Regular; 26" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="red" noWrap="1" borderWidth="2" />
-		<widget font="Regular; 26" position="1422,280" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="red" borderWidth="2">
+		<eLabel text="TXT" position="1352,279" size="70,30" font="Regular; 28" backgroundColor="secondBG" transparent="1" valign="center" halign="left" foregroundColor="red" noWrap="1" borderWidth="2" />
+		<widget font="Regular; 28" position="1422,280" size="270,30" render="Label" source="session.CurrentService" valign="center" halign="left" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="red" borderWidth="2">
 			<convert type="MyServiceInfoEX">: %txtpid</convert>
 		</widget>
 		<eLabel position="1320,318" size="370,5" foregroundColor="black" backgroundColor="darkgrey" zPosition="1" />
-		<eLabel text="\nC\nR\nY\nP\nT\nO\n" position="1318,335" size="34,250" font="Regular; 26" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="green" foregroundColor="white" borderWidth="2" borderColor="black" />
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="green" halign="left" position="1356,336" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
+		<eLabel text="\nC\nR\nY\nP\nT\nO\n" position="1318,335" size="34,250" font="Regular; 28" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="green" foregroundColor="white" borderWidth="2" borderColor="black" />
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="green" halign="left" position="1356,336" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
 			<convert type="MydExtraInfo">Emu</convert>
 		</widget>
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="blue" halign="left" position="1356,366" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="blue" halign="left" position="1356,366" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
 			<convert type="MydExtraInfo">Address</convert>
 		</widget>
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="red" halign="left" position="1356,397" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="red" halign="left" position="1356,397" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
 			<convert type="MydExtraInfo">Hops</convert>
 		</widget>
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="orange" halign="left" position="1355,429" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="orange" halign="left" position="1355,429" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
 			<convert type="MydExtraInfo">System</convert>
 		</widget>
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="secondFG" halign="left" position="1356,461" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2" noWrap="1">
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="secondFG" halign="left" position="1356,461" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2" noWrap="1">
 			<convert type="MydExtraInfo">Caid</convert>
 		</widget>
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="white" halign="left" position="1356,494" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="white" halign="left" position="1356,494" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
 			<convert type="MydExtraInfo">Provid</convert>
 		</widget>
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="grey" halign="left" position="1356,525" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="grey" halign="left" position="1356,525" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
 			<convert type="MydExtraInfo">Ecmpid</convert>
 		</widget>
-		<widget backgroundColor="secondBG" font="Regular; 26" foregroundColor="red" halign="left" position="1356,555" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
+		<widget backgroundColor="secondBG" font="Regular; 28" foregroundColor="red" halign="left" position="1356,555" render="Label" size="380,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1" borderWidth="2">
 			<convert type="MydExtraInfo">Ecmtime</convert>
 		</widget>
 		<widget source="session.CurrentService" render="FixedLabel" text="FTA\nService" position="1359,341" size="320,239" zPosition="3" backgroundColor="secondBG" transparent="0" foregroundColor="orange" font="Regular; 60" borderWidth="3" borderColor="black" halign="center" valign="center">
 			<convert type="MyServiceInfoEX">IsFta</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="\nS\nY\nS\nT\nE\nM\n" position="1318,620" size="34,270" font="Regular; 26" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="blue" foregroundColor="white" borderWidth="2" borderColor="black" />
+		<eLabel text="\nS\nY\nS\nT\nE\nM\n" position="1318,620" size="34,270" font="Regular; 28" transparent="0" halign="center" valign="center" zPosition="1" backgroundColor="#0000CD" foregroundColor="white" borderWidth="2" borderColor="black" />
 		<eLabel position="1324,602" size="410,4" foregroundColor="black" backgroundColor="darkgrey" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="1355,623" size="380,30" font="Regular; 26" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="green" backgroundColor="secondBG" borderWidth="2">
+		<widget source="session.CurrentService" render="Label" position="1355,623" size="380,30" font="Regular; 28" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="green" backgroundColor="secondBG" borderWidth="2">
 			<convert type="CpuUsage">Global CPU Use: $0</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1356,655" size="430,30" font="Regular; 26" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="blue" backgroundColor="secondBG" borderWidth="2">
+		<widget source="session.CurrentService" render="Label" position="1356,655" size="430,30" font="Regular; 28" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="blue" backgroundColor="secondBG" borderWidth="2">
 			<convert type="CpuUsage">Core #1: $1  -  Core #2: $2</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1356,692" size="380,30" font="Regular; 26" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="red" backgroundColor="secondBG" borderWidth="2">
+		<widget source="session.CurrentService" render="Label" position="1356,692" size="380,30" font="Regular; 28" halign="left" valign="center" transparent="1" zPosition="6" foregroundColor="red" backgroundColor="secondBG" borderWidth="2">
 			<convert type="MydExtraInfo">Temp</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1355,724" size="380,30" zPosition="3" font="Regular; 26" halign="left" valign="center" transparent="1" backgroundColor="secondBG" noWrap="0" foregroundColor="orange" borderWidth="2">
+		<widget source="session.CurrentService" render="Label" position="1355,724" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" backgroundColor="secondBG" noWrap="0" foregroundColor="orange" borderWidth="2">
 			<convert type="pliLayoutInfo">FlashInfo,Short</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1356,758" size="380,30" zPosition="3" font="Regular; 26" halign="left" valign="center" transparent="1" backgroundColor="secondBG" foregroundColor="secondFG" borderWidth="2">
+		<widget source="session.CurrentService" render="Label" position="1356,758" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" backgroundColor="secondBG" foregroundColor="secondFG" borderWidth="2">
 			<convert type="pliLayoutInfo">MemTotal,Short</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1356,794" size="380,30" zPosition="3" font="Regular; 26" halign="left" valign="center" transparent="1" noWrap="0" backgroundColor="secondBG" foregroundColor="white" borderWidth="2">
+		<widget source="session.CurrentService" render="Label" position="1356,794" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" noWrap="0" backgroundColor="secondBG" foregroundColor="white" borderWidth="2">
 			<convert type="pliLayoutInfo">HddInfo,Short</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1356,828" size="380,30" zPosition="3" font="Regular; 26" halign="left" valign="center" transparent="1" noWrap="0" backgroundColor="secondBG" foregroundColor="grey" borderWidth="2">
+		<widget source="session.CurrentService" render="Label" position="1356,828" size="380,30" zPosition="3" font="Regular; 28" halign="left" valign="center" transparent="1" noWrap="0" backgroundColor="secondBG" foregroundColor="grey" borderWidth="2">
 			<convert type="pliLayoutInfo">UsbInfo,Short</convert>
 		</widget>
-		<widget font="Regular; 26" backgroundColor="secondBG" halign="left" position="1358,863" render="Label" size="555,30" source="session.CurrentService" transparent="1" foregroundColor="green">
+		<widget font="Regular; 28" backgroundColor="secondBG" halign="left" position="1358,863" render="Label" size="555,30" source="session.CurrentService" transparent="1" foregroundColor="green">
             <convert type="BoxInfo">Uptime</convert>
         </widget>
 		<!-- eLabel name="DEBUG" text="PE002" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
