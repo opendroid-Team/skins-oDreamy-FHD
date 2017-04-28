@@ -1025,6 +1025,11 @@
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv.png" alphatest="blend" position="1140,45" size="100,100" zPosition="2" transparent="1">
+		<convert type="ServiceInfo">IsStream</convert>
+		<convert type="ConditionalShowHide">
+		</convert>
+                </widget>	
 		<widget source="session.FrontendInfo" render="Pixmap" pixmap="oDreamy-FHD/icons/dtt.png"   position="1170,45" size="70,70" zPosition="2" alphatest="blend" >
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
