@@ -669,4 +669,34 @@
 		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<eLabel text="Exit" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
+	<screen name="infocolor">
+		<widget source="session.CurrentService" render="Label" position="100,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelred</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="400,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelgreen</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="700,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelyellow</convert>
+		</widget>		
+		<widget source="session.CurrentService" render="Label" position="1000,1007" size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelblue</convert>
+		</widget>
+	</screen>
+
+	<screen name="plugincolor">
+		<widget source="session.CurrentService" render="Label" position="120,955"  size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">pluginred</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="405,955"  size="300,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">plugingreen</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="685,955"  size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">pluginyellow</convert>
+		</widget>		
+		<widget source="session.CurrentService" render="Label" position="1000,955" size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">pluginblue</convert>
+		</widget>
+	</screen>
+
 </skin>
