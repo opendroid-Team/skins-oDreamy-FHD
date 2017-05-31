@@ -3644,10 +3644,10 @@
 
 	<screen name="nPlaylist" position="0,0" size="1920,1080" title="IpTV Play List" backgroundColor="#ff000000" flags="wfNoBorder" >
 		<!-- Panel -->
-		<ePixmap position="0,0"     size="1920,1080" pixmap="/usr/lib/enigma2/python/OPENDROID/img/fullpanel.png" zPosition="-1" />
+		<ePixmap position="0,0"     size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/fullpanel.png" zPosition="-1" />
 		<eLabel  position="51,126"  size="80,817"    backgroundColor="#05303030" zPosition="-1" />
-		<ePixmap position="60,35"   size="80,80"     pixmap="/usr/lib/enigma2/python/OPENDROID/img/list.png"  alphatest="blend" zPosition="1" />
-		<ePixmap position="45,28"   size="70,70"     pixmap="/usr/lib/enigma2/python/OPENDROID/img/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="60,35"   size="80,80"     pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/list.png"  alphatest="blend" zPosition="1" />
+		<ePixmap position="45,28"   size="70,70"     pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/angle30.png" alphatest="blend" zPosition="2" />
 		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<widget name="playlist"  position="150,30" size="1100,80" font="Regular;50" valign="center" backgroundColor="#10000000" foregroundColor="ltbluette" transparent="0" zPosition="5" />
 		<!-- Clock -->
@@ -3656,11 +3656,11 @@
 		</widget>
 		<!-- Lista Contenuti -->
 		<widget name="feedlist" position="60,135" size="1220,800" foregroundColorSelected="#ffffff" backgroundColor="#20000000"
-		        selectionPixmap="/usr/lib/enigma2/python/OPENDROID/img/slider50.png" scrollbarMode="showOnDemand" 
+		        selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/slider50.png" scrollbarMode="showOnDemand" 
 		        foregroundColor="#ffffff" backgroundColorSelected="#05303030" enableWrapAround="1" zPosition="1" transparent="1" /> 
-		<ePixmap position="1510,175" size="160,96" pixmap="/usr/lib/enigma2/python/OPENDROID/img/player.png" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap position="1510,175" size="160,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/player.png" alphatest="blend" transparent="1" zPosition="1" />
 		<eLabel  position="1300,310" size="620,10" backgroundColor="#FF000000" zPosition="-1" />
-		<widget name = "poster"      position="1300,125" size="575,820" pixmap="/usr/lib/enigma2/python/OPENDROID/img/clear.png" zPosition="2" transparent="1" alphatest="blend" />
+		<widget name = "poster"      position="1300,125" size="575,820" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/clear.png" zPosition="2" transparent="1" alphatest="blend" />
 		<widget name = "description" position="1310,340" size="550,565" font="Regular;30" halign="center" backgroundColor="#10000000" foregroundColor="#74b1fe" transparent="1" />
 		<widget name = "info"        position="1310,140" size="550,615" font="Regular;30" halign="center" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" /> 
 		<widget name = "pixmap2"     position="370,990"  size="250,80"  zPosition="1" transparent="1" alphatest="blend" />
@@ -3672,7 +3672,7 @@
 		<widget name = "chplus"      position="496,990"  zPosition="4"  size="150,24" halign="center" font="Regular;22" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000"  />
 		<widget name = "pixmap4a"    position="667,990"  size="32,25"   zPosition="3" transparent="1" alphatest="blend" />
 		<widget name = "stop"        position="700,990"  zPosition="4"  size="150,24" halign="center" font="Regular;22" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000"  />		   
-		<ePixmap position="70,990" size="30,30" pixmap="/usr/lib/enigma2/python/OPENDROID/img/redpanel.png"    zPosition="3" transparent="1" alphatest="blend" />
+		<ePixmap position="70,990" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/redpanel.png"    zPosition="3" transparent="1" alphatest="blend" />
 		<eLabel text="HOME" position="115,988" zPosition="4" size="250,40" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000" />
 		<eLabel text="Mod By mmark" position="1320,990" zPosition="4" size="560,40" halign="center" font="Regular;30" transparent="1" foregroundColor="#808080" backgroundColor="#10000000" />
 		<widget name="version" position="1320,990" size="0,40" font="Regular;30" halign="left" foregroundColor="#ffffff" backgroundColor="#41000000" transparent="1" zPosition="4" />
@@ -3680,17 +3680,17 @@
 
 	<!-- PLAYER -->
 	<screen name="Xtream_Player" position="0,800" size="1920,280" backgroundColor="#FF000000" flags="wfNoBorder" title="Videoplayer">
-		<ePixmap position="0,0"  size="1700,70" pixmap="/usr/lib/enigma2/python/OPENDROID/img/closebar.png" alphatest="blend" transparent="1" zPosition="5" />
+		<ePixmap position="0,0"  size="1700,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/closebar.png" alphatest="blend" transparent="1" zPosition="5" />
 		<eLabel  position="0,35" size="1920,250" transparent="0" backgroundColor="#10000000" zPosition="4" />
-		<ePixmap position="50,95" size="160,96" pixmap="/usr/lib/enigma2/python/OPENDROID/img/player.png" alphatest="blend" transparent="1" zPosition="5" />
+		<ePixmap position="50,95" size="160,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/player.png" alphatest="blend" transparent="1" zPosition="5" />
 		<widget name="cover" position="1720, 10" size="120,160" transparent="1" alphatest="blend" zPosition="1" />
-		<ePixmap position="50,20" size="45,35" pixmap="/usr/lib/enigma2/python/OPENDROID/img/icon_event.png" alphatest="blend" transparent="1" zPosition="5" />
+		<ePixmap position="50,20" size="45,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/icon_event.png" alphatest="blend" transparent="1" zPosition="5" />
 		<widget source="session.CurrentService" foregroundColor="#ffffff" render="Label" position="120,10" size="1650,50" font="Regular;46" backgroundColor="#10000000" transparent="1" zPosition="10">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- Blinking pixmap (recording in progress) -->
-		<ePixmap position="1640,15" size="45,45" pixmap="/usr/lib/enigma2/python/OPENDROID/img/rec_off.png" alphatest="blend" zPosition="5" />
-		<widget source="session.RecordState" render="Pixmap" position="1640,15" size="45,45" pixmap="/usr/lib/enigma2/python/OPENDROID/img/rec_on.png" alphatest="blend" zPosition="5" >
+		<ePixmap position="1640,15" size="45,45" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/rec_off.png" alphatest="blend" zPosition="5" />
+		<widget source="session.RecordState" render="Pixmap" position="1640,15" size="45,45" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/rec_on.png" alphatest="blend" zPosition="5" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S -->
@@ -3710,28 +3710,28 @@
 		<widget source="session.CurrentService" render="Label" position="1720,115" size="200,50" font="Regular;40" halign="left" valign="center" foregroundColor="red" backgroundColor="#10000000" transparent="1" zPosition="5" >
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<ePixmap position="55,213" size="35,35" pixmap="/usr/lib/enigma2/python/OPENDROID/img/bluepanel.png" alphatest="blend" transparent="1" zPosition="6" /> 
+		<ePixmap position="55,213" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/bluepanel.png" alphatest="blend" transparent="1" zPosition="6" /> 
 		<widget name="cont_play" position="105,211" size="300,70" halign="left" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" zPosition="7" /> 		
 		<!-- Audio icon (is there multichannel audio?) -->
-		<ePixmap pixmap="/usr/lib/enigma2/python/OPENDROID/img/ico_dolby_off.png" position="1180,188" size="200,50"  alphatest="blend" zPosition="5" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/OPENDROID/img/ico_dolby_on.png" position="1180,188" size="150,50" alphatest="blend" zPosition="6" >
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/ico_dolby_off.png" position="1180,188" size="200,50"  alphatest="blend" zPosition="5" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/ico_dolby_on.png" position="1180,188" size="150,50" alphatest="blend" zPosition="6" >
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- HDTV icon -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/OPENDROID/img/ico_hd_off.png" position="1360,188" size="150,50" zPosition="5" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/ico_hd_off.png" position="1360,188" size="150,50" zPosition="5" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/OPENDROID/img/ico_hd_on.png" position="1360,188" size="150,50" zPosition="6" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/ico_hd_on.png" position="1360,188" size="150,50" zPosition="6" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Videoformat icon (16:9?) -->
-		<ePixmap pixmap="/usr/lib/enigma2/python/OPENDROID/img/ico_format_off.png" position="1540,188" size="150,50" zPosition="5" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/OPENDROID/img/ico_format_on.png" position="1540,188" size="150,50" zPosition="6" alphatest="blend">
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/ico_format_off.png" position="1540,188" size="150,50" zPosition="5" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XC-Multi/img/ico_format_on.png" position="1540,188" size="150,50" zPosition="6" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
