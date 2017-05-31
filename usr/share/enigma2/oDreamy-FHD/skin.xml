@@ -246,6 +246,7 @@
 	<screen name="Volume" position="center,50" size="800,50" zPosition="10" title="Volume" flags="wfNoBorder">
 		<ePixmap position="0,0" size="800,50" pixmap="oDreamy-FHD/skin_default/volbg.png" zPosition="1" />
 		<widget name="Volume" position="44,22" size="700,6" pixmap="oDreamy-FHD/skin_default/volbar.png" transparent="1" zPosition="2" />
+		<widget source="global.CurrentTime" render="VolumeText" backgroundColor="background" font="Regular; 28" halign="center" position="734,10" size="60,30" transparent="1" valign="center" zPosition="20" name="2" />
 		<!-- eLabel name="DEBUG" text="S005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -791,17 +792,17 @@
 	    <convert type="ServiceOrbitalPosition" />
 	  </widget>
 	  <!-- Sat Name Info -->
-	  <widget source="session.CurrentService" render="Label" position="1615,112" size="140,40" font="Regular;32" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
-	    <convert type="PliExtraInfo">TransponderName</convert>
+	  <widget source="session.CurrentService" render="Label" position="1615,112" size="140,40" font="Regular;28" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
+	    <convert type="PliExtraInfo">ServiceInfo</convert>
 	  </widget>
             <widget backgroundColor="black" font="Regular; 24" halign="center" position="1665,965" render="Label" size="250,26" source="session.CurrentService" transparent="1">
           <convert type="PliExtraInfo">ResolutionString</convert>
       </widget>
 		<ePixmap pixmap="oDreamy-FHD/icons/bigclock.png" position="60,40" size="100,100" zPosition="1" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Watches" position="80,60" size="60,60" zPosition="2" foregroundColor="yellow"  alphatest="blend">
+		<widget source="global.CurrentTime" render="Watches" position="80,60" size="60,60" zPosition="2" foregroundColor="red"  alphatest="blend">
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Watches" position="80,60" size="65,60" zPosition="3" foregroundColor="white"   alphatest="blend">
+		<widget source="global.CurrentTime" render="Watches" position="80,60" size="65,60" zPosition="3" foregroundColor="ltbluette"   alphatest="blend">
 			<convert type="ExtraNumText">minHand</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Watches" position="75,55" size="70,70" zPosition="4" foregroundColor="#505050" alphatest="blend" >
@@ -1004,7 +1005,7 @@
 		</widget>			
 		<widget source="session.Event_Next" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1"
 			position="485,690" size="1375,195" font="Regular;28" halign="center" valign="top" foregroundColor="#808080" backgroundColor="header" transparent="1" zPosition="2" >
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!--<widget name="key_red"    position="100,1007"  size="0,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="key_green"  position="400,1007"  size="0,40" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
@@ -1804,14 +1805,14 @@
 		<eLabel text="Info" position="1360,310" size="200,43" font="Regular;26" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
 		<ePixmap position="1440,315" size="100,100" pixmap="buttons/key_help.png" alphatest="blend" zPosition="1" />
 		<ePixmap position="1275,280" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="1" />
-		<ePixmap position="1535,270" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="1" />
-		<widget source="global.CurrentTime" render="Watches" position="1539,274" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="1" />
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
 			<convert type="ExtraNumText">secHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Watches" position="1539,273" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
 			<convert type="ExtraNumText">minHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Watches" position="1544,279" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="4" foregroundColor="red" alphatest="blend">
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1530,245" size="250,95" font="Regular;35" halign="right" valign="center" foregroundColor="ltbluette" backgroundColor="#10101010" transparent="1" zPosition="1">
@@ -3380,7 +3381,7 @@
 		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
 			<convert type="ExtraNumText">minHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="4" foregroundColor="red" alphatest="blend">
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>		
 		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
