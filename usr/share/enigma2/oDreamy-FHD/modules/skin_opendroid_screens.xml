@@ -1070,6 +1070,29 @@
 		<ePixmap pixmap="oDreamy-FHD/menu/folders.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<!-- eLabel name="DEBUG" text="PE042" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
+		<!--  Mount Manager FHD -->
+	<screen name="DeviceManager" position="fill"  title="Devices Panel" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="nRGYB" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap pixmap="menu/peripheric.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		<widget name="lab1" position="70,180" size="820,60" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget source="list" render="Listbox" position="70,180" size="820,600" scrollbarMode="showOnDemand" zPosition="1" transparent="1" >
+		      <convert type="TemplatedMultiContent">
+			      {"template": [
+					      MultiContentEntryText(pos = (100, 2), size = (800, 50), font=0, color=0x3589ff, text = 0),
+					      MultiContentEntryText(pos = (120, 45), size = (780, 70), font=1, flags = RT_VALIGN_TOP, text = 1),
+					      MultiContentEntryPixmapAlphaTest(pos = (0, 5), size = (100, 100), png = 2),
+				      ],
+				      "fonts": [gFont("Regular", 32),gFont("Regular", 26)],
+				      "itemHeight": 120
+			      }
+		      </convert>
+		</widget>
+		<!-- eLabel name="DEBUG" text="09" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
 	
 	<!--   NetBrowser OKK -->
 	<screen name="Swap" position="fill" title="Swap Manager" backgroundColor="transparent" flags="wfNoBorder" >
