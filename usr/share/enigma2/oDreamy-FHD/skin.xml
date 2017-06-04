@@ -909,7 +909,7 @@
  		<widget source="session.CurrentService" render="Label" position="70,870" size="500,40" font="Regular;25" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="150,840" size="280,40" font="Regular;31" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3" >
+		<widget source="session.CurrentService" render="Label" position="150,820" size="280,40" font="Regular;31" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="MydExtraInfo">Emu</convert>
 		</widget>
 		<!-- ***** Close Box Channel ***** --> 
