@@ -905,11 +905,11 @@
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="icons/emupic.png" position="65,777" size="80,105" scale="1" alphatest="blend" zPosition="2" />
- 		<widget source="session.CurrentService" render="Label" position="70,725" size="500,40" font="Regular;31" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
+		<ePixmap pixmap="icons/emupic.png" position="65,757" size="80,105" scale="1" alphatest="blend" zPosition="2" />
+ 		<widget source="session.CurrentService" render="Label" position="70,870" size="500,40" font="Regular;25" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="150,850" size="280,40" font="Regular;31" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3" >
+		<widget source="session.CurrentService" render="Label" position="150,840" size="280,40" font="Regular;31" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3" >
 			<convert type="MydExtraInfo">Emu</convert>
 		</widget>
 		<!-- ***** Close Box Channel ***** --> 
@@ -3508,6 +3508,7 @@
 
 	<!-- ServiceInfo FHD -->
 	<screen name="ServiceInfoSimple" title="Service Info" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+	        <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
