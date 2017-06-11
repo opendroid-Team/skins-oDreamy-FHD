@@ -33,8 +33,8 @@
 		<panel name="p800_Logo" />
                 <panel name="p900_Date"/>
     <ePixmap pixmap="buttons/vkey_esc.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
-    <widget name="label2" position="55,100" foregroundColor="white" size="875,100" valign="bottom" font="Regular;34" backgroundColor="background" transparent="1" />
-    <widget name="label1" position="55,200" size="850,750" font="Regular;30" zPosition="1" transparent="1" backgroundColor="background" foregroundColor="white" />
+    <widget name="label2" position="55,80" foregroundColor="white" size="875,100" valign="bottom" font="Regular;34" backgroundColor="background" transparent="1" />
+    <widget name="label1" position="55,180" size="850,750" font="Regular;30" zPosition="1" transparent="1" backgroundColor="background" foregroundColor="white" />
    <ePixmap position="950,645" size="256,256" pixmap="menu/info_screen.png" alphatest="blend"/>
    <ePixmap position="60,970" size="700,90" pixmap="oDreamy-FHD/icons/opendroid_logo.png" alphatest="blend" zPosition="2" />
 		<!-- eLabel name="DEBUG"  text="PANEL E011" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
