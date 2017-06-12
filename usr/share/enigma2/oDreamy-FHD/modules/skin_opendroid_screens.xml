@@ -291,17 +291,14 @@
 	
 		<!--  OscamSmartcard FHD -->
 	<screen name="OscamSmartcard" position="fill" title="Panel OscamSmartcard" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p800_Template" />
-		<panel name="p800_Logo" />
+		<panel name="p900_Template" />
 		<panel name="p800_Ext" />
 		<panel name="p800_Date" />
+		<ePixmap position="1295,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<widget name="config"        position="60,180" size="850,730" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 		
-		<ePixmap pixmap="oDreamy-FHD/menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
-		
-		<widget name="config"        position="50,180" size="850,730" font="Regular;30" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="Title" position="1335,285" size="565,50" zPosition="1" font="Regular; 32" halign="left" backgroundColor="black" transparent="1" />
-		<widget name="HELPTEXT"   position="1255,380" size="580,540" font="Regular;30" halign="center" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="ltbluette" transparent="1" zPosition="2" />
-		<widget name="HEADER" position="60,434" size="750,440" zPosition="1" font="Regular; 32" halign="left" backgroundColor="black" transparent="1" />
+		<widget name="HELPTEXT"   position="1070,460" size="820,340" font="Regular; 28" backgroundColor="dark" transparent="1" zPosition="1" />
+		<widget name="HEADER" position="60,434" size="750,540" zPosition="1" font="Regular; 32" halign="left" backgroundColor="black" transparent="1" />
 		
 		<eLabel font="Regular; 28" foregroundColor="white" backgroundColor="#20000000" halign="left" position="90, 988" size="250,33" text="Cancel" transparent="1" />
 	<eLabel font="Regular; 28" foregroundColor="white" backgroundColor="#20000000" halign="left" position="390,988" size="250,33" text="Start" transparent="1" />
