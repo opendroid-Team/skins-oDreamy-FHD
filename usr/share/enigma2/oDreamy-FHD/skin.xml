@@ -892,7 +892,7 @@
 		<widget source="session.CurrentService" render="Picon" position="60,320" size="340,210" alphatest="blend" zPosition="5" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-			<widget source="ServiceEvent" render="Picon" position="0,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
+			<widget source="ServiceEvent" render="Picon" position="60,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
 				<convert type="DRRefString">ServicelistRef</convert>
 			</widget>
 		<!-- ***** BlackBox ***** --> 
