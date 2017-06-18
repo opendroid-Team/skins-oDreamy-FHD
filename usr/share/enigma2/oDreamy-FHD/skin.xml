@@ -887,12 +887,12 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<!-- ***** BlueBox ***** --> 
-		<ePixmap pixmap="box/bluebox.png" position="70,305" size="370,280" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="box/bluebox.png" position="50,305" size="370,280" alphatest="blend" zPosition="1" />
 		<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="80,320" size="340,210" alphatest="blend" zPosition="5" >
+		<widget source="session.CurrentService" render="Picon" position="60,320" size="340,210" alphatest="blend" zPosition="5" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-			<widget source="ServiceEvent" render="Picon" position="80,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
+			<widget source="ServiceEvent" render="Picon" position="60,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
 				<convert type="DRRefString">ServicelistRef</convert>
 			</widget>
 		<!-- ***** BlackBox ***** --> 
@@ -3059,7 +3059,21 @@
 		<!-- eLabel name="DEBUG" text="S214" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	<!--MultiBootStartup	-->
-	<screen name="MultiBootStartup" position="fill" title="MultiBoot STARTUP Selector" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="MultiBootStartupOPT" position="fill" title="MultiBoot Selector" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="sRGY" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+                <widget source="config" render="Label" position="70,180" size="830,50" halign="left" transparent="1" font="Regular; 34" backgroundColor="#00000000" foregroundColor="blue" />
+                <widget source="options" render="Label" position="70,240" size="830,35" halign="left" transparent="1" font="Regular; 28" backgroundColor="#00000000" foregroundColor="grey" />
+                <widget name="description" position="70,300" size="830,26" transparent="1" font="Regular; 24" foregroundColor="#00ffffff" halign="left" backgroundColor="#00000000" valign="grey" />
+		<ePixmap pixmap="menu/startboot.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		
+	</screen>
+	<!--MultiBootStartupXC	-->
+	<screen name="MultiBootStartup" position="fill" title="MultiBoot Selector" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
