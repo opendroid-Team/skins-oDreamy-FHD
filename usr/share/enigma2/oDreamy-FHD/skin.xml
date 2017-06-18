@@ -892,7 +892,7 @@
 		<widget source="session.CurrentService" render="Picon" position="60,320" size="340,210" alphatest="blend" zPosition="5" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-			<widget source="ServiceEvent" render="Picon" position="60,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
+			<widget source="ServiceEvent" render="Picon" position="0,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
 				<convert type="DRRefString">ServicelistRef</convert>
 			</widget>
 		<!-- ***** BlackBox ***** --> 
@@ -3059,7 +3059,7 @@
 		<!-- eLabel name="DEBUG" text="S214" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	<!--MultiBootStartup	-->
-	<screen name="MultiBootStartupOPT" position="fill" title="MultiBoot Selector" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="MultiBootStartup" position="fill" title="MultiBoot Selector" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
@@ -3073,7 +3073,7 @@
 		
 	</screen>
 	<!--MultiBootStartupXC	-->
-	<screen name="MultiBootStartup" position="fill" title="MultiBoot Selector" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="MultiBootStartupXC" position="fill" title="MultiBoot Selector" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
