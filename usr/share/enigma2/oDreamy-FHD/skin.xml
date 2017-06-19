@@ -444,13 +444,13 @@
 	</screen>
 
 	<!-- About FHD -->
-	<screen name="AboutTeam" position="fill" title="About Team" backgroundColor="#FF000000" flags="wfNoBorder" >
-		<panel name="p800_Template" />
-		<panel name="p800_Logo" />
-		<panel name="p800_DateMid" />
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend" zPosition="1" />
-		<widget name="about" position="70,180" size="820,720" font="Regular;30" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+	<screen name="CommitInfo" position="fill" title="About Team" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sR"/>
+                <widget name="AboutScrollLabel" position="70,200" size="820,720" itemHeight="45" font="Regular;30" backgroundColor="header" transparent="1"/>
+                <ePixmap position="960,640" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="S101" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
