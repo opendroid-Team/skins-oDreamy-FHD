@@ -246,8 +246,7 @@
 	<screen name="Volume" position="center,50" size="800,50" zPosition="10" title="Volume" flags="wfNoBorder">
 		<ePixmap position="0,0" size="800,50" pixmap="oDreamy-FHD/skin_default/volbg.png" zPosition="1" />
 		<widget name="Volume" position="44,22" size="700,6" pixmap="oDreamy-FHD/skin_default/volbar.png" transparent="1" zPosition="2" />
-		<widget source="global.CurrentTime" render="VolumeText" backgroundColor="background" font="Regular; 28" halign="center" position="734,10" size="60,30" transparent="1" valign="center" zPosition="20" name="2" />
-		<!-- eLabel name="DEBUG" text="S005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Unhandled key FHD -->
@@ -889,12 +888,9 @@
 		<!-- ***** BlueBox ***** --> 
 		<ePixmap pixmap="box/bluebox.png" position="50,305" size="370,280" alphatest="blend" zPosition="1" />
 		<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="60,320" size="340,210" alphatest="blend" zPosition="5" >
+		<widget source="session.CurrentService" render="Picon" position="65,322" size="340,210" alphatest="blend" zPosition="5" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-			<widget source="ServiceEvent" render="Picon" position="60,320" size="340,210" zPosition="1" alphatest="blend" transparent="5" >
-				<convert type="DRRefString">ServicelistRef</convert>
-			</widget>
 		<!-- ***** BlackBox ***** --> 
 		<ePixmap pixmap="box/blackbox.png" position="50,550" size="370,350" alphatest="blend" zPosition="2" />
 		<eLabel text="Ch." position="60,580" size="80,60" font="Regular;50" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" zPosition="9"/>
@@ -931,7 +927,7 @@
 		<widget source="session.Event_Now" render="Progress" position="250,930" size="1400,45" foregroundColor="bluette" backgroundColor="#20202020" transparent="0" zPosition="2" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="260,930" size="1400,45" font="Regular;38" foregroundColor="black" backgroundColor="#20202020" transparent="1" zPosition="3" >
+		<widget source="session.Event_Now" render="Label" position="260,930" size="1400,45" font="Regular;38" backgroundColor="#20202020" transparent="1" zPosition="3" >
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1670,930" size="200,44" font="Regular;38" foregroundColor="ltbluette" backgroundColor="header" halign="right" transparent="1">
@@ -1058,7 +1054,6 @@
 		<!-- Event Title -->
 		<eLabel position="1260,140" size="610,260" backgroundColor="#10101010" zPosition="0" />
 		<eLabel position="1260,400" size="610,10"  backgroundColor="#FF101010" zPosition="0" />
-		<!-- Service Name -->
 		<widget source="ServiceEvent" render="Picon" position="1280,150" size="220,132" zPosition="1" alphatest="blend" transparent="1" >
 			<convert type="ODRefString">ServicelistRef</convert>
 		</widget>
@@ -1097,7 +1092,7 @@
 			steptime=36,
 			always=0,
 			noWrap" 
-			foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="5">
+			foregroundColor="white" backgroundColor="header" transparent="1" zPosition="5">
     			<convert type="DRNextEvents">Event1,onlyStart</convert>
     		</widget>
 		<!-- Next Event 2 -->
@@ -1257,7 +1252,7 @@
 	</screen>
 
 	<!-- ChoiceBox FHD -->
-		<screen name="ChoiceBox" title="Choice Box" position="fill" backgroundColor="background" flags="wfNoBorder">
+	<screen name="ChoiceBox" title="Choice Box" position="fill" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template" />
 		<panel name="p800_DateMid" />
 		<widget name="list" position="72,140" size="1170,720" font="Regular;32" itemHeight="40" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="grey" backgroundColor="header" transparent="1" zPosition="2" />
