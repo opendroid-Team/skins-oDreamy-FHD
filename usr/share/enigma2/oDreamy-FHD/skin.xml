@@ -208,12 +208,15 @@
 		<color name="WindowTitleBackground"              color="#000000" />
 	</windowstyle>
 
+	<cascadingstylesheets name="slider_volume_horizontal" >
+	</cascadingstylesheets>
+	
 	<!-- RDS info FHD -->
 	<screen name="RdsInfoDisplay" position="fill" backgroundColor="transparent" flags="wfNoBorder" zPosition="-2">
 		<widget name="RassLogo"  position="70,600" size="100,50" pixmap="skin_default/icons/rass_logo.png"/>
 		<widget name="RadioText" position="70,650" size="1800,50" font="Regular;32" noWrap="1" halign="left"  backgroundColor="#003258"/>
 		<widget name="RtpText"   position="70,700" size="1800,50" font="Regular;32" noWrap="1" halign="right" backgroundColor="#003258"/>
-		<!-- eLabel name="DEBUG" text="S000" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S000" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Reboot FHD -->
@@ -233,19 +236,20 @@
 
 	<!-- Scart -->
 	<screen name="Scart" position="fill" backgroundColor="transparent" >
-		<!-- eLabel name="DEBUG" text="S003" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S003" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
         </screen>
 
 	<!-- Mute FHD -->
 	<screen name="Mute" title="Mute" position="1750,50" size="100,100" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
 		<ePixmap pixmap="oDreamy-FHD/skin_default/mute.png" position="0,0" size="100,100" alphatest="on" zPosition="0"/>
-		<!-- eLabel name="DEBUG" text="S004" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S004" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Volumebar FHD -->
 	<screen name="Volume" position="center,50" size="800,50" zPosition="10" title="Volume" flags="wfNoBorder">
 		<ePixmap position="0,0" size="800,50" pixmap="oDreamy-FHD/skin_default/volbg.png" zPosition="1" />
-		<widget name="Volume" position="44,22" size="700,6" pixmap="oDreamy-FHD/skin_default/volbar.png" transparent="1" zPosition="2" />
+		<widget name="Volume" position="44,22" size="650,6" css="slider_volume_horizontal" zPosition="2" />
+		<widget source="global.CurrentTime" render="VolumeText" backgroundColor="background" font="Regular; 30" halign="center" position="700,10" size="60,30" transparent="1" valign="center" zPosition="20" name="2" />
 		<!--eLabel name="DEBUG" text="S005" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -260,7 +264,7 @@
 		<widget name="channel"     position="0,0"   size="250,90" font="Regular;50" valign="center" halign="left" foregroundColor="grey"   backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2"/>
 		<widget name="number"      position="200,0" size="350,90" font="Regular;50" valign="center" halign="left" foregroundColor="yellow" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2"/>
 		<widget name="servicename" position="0,80"  size="780,60" font="Regular;44" valign="center" halign="left" foregroundColor="grey"   backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2"/>
-		<!-- eLabel name="DEBUG" text="S007" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S007" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- NumberZapExt With Name FHD -->
@@ -286,7 +290,7 @@
 	<!-- TextBox FHD -->
 	<screen name="TextBox" position="center,center" size="900,400" title="Message...">
 		<widget name="text" position="10,5" size="880,380" font="Regular;32" foregroundColor="#b0b0b0" transparent="1" />
-		<!-- eLabel name="DEBUG" text="S008" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S008" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Inputbox FHD -->
@@ -299,7 +303,7 @@
 	<!-- Minute input FHD -->
 	<screen name="MinuteInput" position="center,center" size="400,100" title="Seek">
 		<widget name="minutes" position="80,30" size="240,50" halign="right" font="Regular;34" />
-		<!-- eLabel name="DEBUG" text="S010" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S010" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- PVR State FHD -->
@@ -320,7 +324,7 @@
 		<widget source="session.CurrentService" render="Label" position="10,80" size="580,68" font="Regular;26" backgroundColor="#33294a6b" shadowColor="black" shadowOffset="-1,-1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<!-- eLabel name="DEBUG" text="S012" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S012" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Video Finetune FHD -->
@@ -333,39 +337,39 @@
 	<screen name="AutoVideoModeLabel" title="AutoVideoMode" position="80,80" size="500,80" flags="wfNoBorder" >
 		<widget name="content" position="10,5"  size="480,40" font="Regular;32" transparent="1"/>
 		<widget name="restxt"  position="10,26" size="480,40" font="Regular;32" transparent="1"/>
-		<!-- eLabel name="DEBUG" text="S014" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S014" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- VideoMode FHD -->
 	<screen name="VideoMode" title="VideoMode" position="85,45" size="500,80" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="videomode" position="10,0" size="480,60" backgroundColor="transparent" transparent="1" font="Regular;32" borderColor="black" borderWidth="2" valign="center" halign="left"/>
-		<!-- eLabel name="DEBUG" text="S015" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S015" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ChapterZap FHD -->
 	<screen name="ChapterZap" title="ChapterZap" position="center,center" size="350,500" flags="wfNoBorder">
 		<widget name="chapter" position="20,15" size="310,50" font="Regular;32" backgroundColor="#10101010" foregroundColor="#808080" transparent="1"/>
 		<widget name="number"  position="20,75" size="480,50" font="Regular;32" backgroundColor="#10101010" foregroundColor="#73c6ff" zPosition="1" transparent="1"/>
-		<!-- eLabel name="DEBUG" text="S016" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S016" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Picture in picture setup FHD -->
 	<screen name="PiPSetup" position="center,center" size="720,280" backgroundColor="transparent" flags="wfNoBorder" title="PiPSetup">
 		<widget name="text" position="10,10" size="700,260" font="Regular;30" transparent="1" />
-		<!-- eLabel name="DEBUG" text="S017" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S017" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- PiP Zap FHD -->
 	<screen name="PictureInPictureZapping" title="PiPZap" position="center,80" size="200,60" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder" >
 		<eLabel text="PiP-Zap" position="0,0" size="200,60" backgroundColor="transparent" transparent="1" font="Regular;32" borderColor="black" borderWidth="3" valign="center" halign="center"/>
-		<!-- eLabel name="DEBUG" text="S018" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S018" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ScreenSaver FHD -->
 	<screen name="Screensaver" title="ScreenSaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
 		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="500,500" alphatest="on" zPosition="1"/>
-		<!-- eLabel name="DEBUG" text="S020" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S020" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Virtual Keyboard FHD -->
@@ -401,7 +405,7 @@
 		<widget name="help1" position="2,158"   size="100,50" font="Regular;30" halign="center" valign="center" />
 		<widget name="key0"  position="104,158" size="400,50" font="Regular;28" halign="center" valign="center" />
 		<widget name="help2" position="506,158" size="100,50" font="Regular;30" halign="center" valign="center" />
-		<!-- eLabel name="DEBUG" text="S022" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S022" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Help menu FHD -->
@@ -419,7 +423,7 @@
 		<widget name="arrowup"    pixmap="skin_default/arrowup.png"   position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
 		<widget name="arrowup2"   pixmap="skin_default/arrowup.png"   position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
-		<!-- eLabel name="DEBUG" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+		<!--eLabel name="DEBUG" text="S023" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen> 
 
 	<!-- ********** SKIN PANELS ********** -->
@@ -592,7 +596,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Picon -->
-		<widget source="session.CurrentService" render="Picon" position="55,850" size="220,132" alphatest="blend" zPosition="1" >
+		<widget source="session.CurrentService" render="Picon" position="70,850" size="300,160" alphatest="blend" zPosition="5" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<!-- *** Event (now) *** -->
@@ -736,7 +740,7 @@
 	  <eLabel position="810,148" size="500,5" backgroundColor="bluette" zPosition="-1" />
 	  <eLabel position="660,150" size="650,1" backgroundColor="bluette" zPosition="-1" />
 	<widget render="MSNWeatherPixmap" source="session.MSNWeather" position="675,30" size="120,120" zPosition="2" alphatest="blend">
-	  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn/,png</convert>
+	  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn2/,png</convert>
 	</widget>
 	  <widget source="session.MSNWeather" render="Label" position="810,35" size="495,50" font="Regular; 40" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">city</convert>
@@ -1046,7 +1050,7 @@
 			serviceItemHeight="50" serviceNumberFont="Regular;32" serviceNameFont="Regular;30" serviceInfoFont="Regular;30" 
 			foregroundColor="#ffffff" foregroundColorSelected="#ffffff" backgroundColor="header" backgroundColorSelected="bluette"
 			colorServiceDescription="#49bbff" colorServiceDescriptionSelected="#a1daff" foregroundColorServiceNotAvail="#303030" 
-			colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="white" picServiceEventProgressbar="oDreamy-FHD/skin_default/progcl.png" progressBarWidth="70" progressPercentWidth="80" itemsDistances="7" progressbarHeight="7"/>
+			colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="white" picServiceEventProgressbar="oDreamy-FHD/skin_default/progcl.png" progressBarWidth="70" itemsDistances="7" progressbarHeight="7"/>
 		<!-- Channel Name/Reference -->
 		<widget source="ServiceEvent" render="Label" position="1260,35" size="620,95" font="Regular;38" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" >
 			<convert type="ServiceName">Name</convert>
